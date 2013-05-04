@@ -23,6 +23,7 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them comple
 * The password recovery of [hashkill](http://www.gat3way.eu/hashkill)
 * The cryptography of [DaKaRand](http://dankaminsky.com/2012/08/15/dakarand/)
 * The penetration tools of [Kali](http://kali.org)
+* Additional tools for pen-testing, password cracking, and more
 
 Build Instructions
 ==================
@@ -94,15 +95,14 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 * Configure build system to generate & test ISOs
 
 ##### Tasks
-* [Help port TAILS to Wheezy](https://tails.boum.org/todo/Wheezy/)
 * Evaluate features of each distro & unify them into a single kernel
-* Provide two layers of functionality: [desktop](http://www.dorkfolio.net/kernel-repository) install and [live](http://www.irongeek.com/i.php?page=videos/portable-boot-devices-usb-cd-dvd)
 * Add warning messages for anonymity risks
 * Full Disk Encryption (FDE) w/ [LUKS](https://code.google.com/p/cryptsetup/)
 * Host on [AttackVector.org](http://attackvector.org)
 * Provide documentation
-* [HTTPS Everywhere](https://www.eff.org/https-everywhere)
-* Debian repositories
+* Continue to integrate high quality tools
+* Clone the Kali repos so that AttackVector can stand-alone
+** Change live build to run off this new mirror
 
 ![Tor Connected](https://sourceforge.net/p/attackvector/screenshot/Screen%20Shot%202013-05-07%20at%206.14.18%20PM.png)
 --------------

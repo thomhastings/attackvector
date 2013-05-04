@@ -132,3 +132,4 @@ A collaboration between like-minded individuals:
 kaneda - primary contributor
 thong - organizer / contributor
 cykros - tester
+cherez - server part-timer
