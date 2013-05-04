@@ -1,0 +1,172 @@
+Delivered-To: thom@attackvector.org
+Received: by 10.112.171.66 with SMTP id as2csp33931lbc;
+        Thu, 9 May 2013 16:16:38 -0700 (PDT)
+X-Received: by 10.68.129.197 with SMTP id ny5mr14219891pbb.180.1368141397624;
+        Thu, 09 May 2013 16:16:37 -0700 (PDT)
+Return-Path: <dan@doxpara.com>
+Received: from mail-pa0-f49.google.com (mail-pa0-f49.google.com [209.85.220.49])
+        by mx.google.com with ESMTPS id bs5si91943pbb.128.2013.05.09.16.16.36
+        for <thom@attackvector.org>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 09 May 2013 16:16:37 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.220.49 is neither permitted nor denied by best guess record for domain of dan@doxpara.com) client-ip=209.85.220.49;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 209.85.220.49 is neither permitted nor denied by best guess record for domain of dan@doxpara.com) smtp.mail=dan@doxpara.com
+Received: by mail-pa0-f49.google.com with SMTP id bi5so2444554pad.22
+        for <thom@attackvector.org>; Thu, 09 May 2013 16:16:36 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=x-received:subject:references:from:content-type:x-mailer
+         :in-reply-to:message-id:date:to:content-transfer-encoding
+         :mime-version:x-gm-message-state;
+        bh=Uri7fLJZ2XOILF8ANHEMGwBbtE2SemR+jKlyrchMpg4=;
+        b=hWmCGYm1Qa5AAvoLt94/jqchXTlaJ4BYHwqLpchzeOFonRu9DVxuwIEoT7FKnMQUGf
+         zQ8O3AeBaBUNinhiGPJj9pz/AcjckRADCalPXhDBwV6kFBoHsf6Ps1EzZBmZmqdzTMM9
+         +bBRApAfX9a+kqX7iOCF/1xNi+bn7faMpBMzVQbEEJTtnhSQKBNWYKFVtmXPv6C5UJg+
+         ZcngBYPNBHo/rTwHthOXAWa1wyVRtl+xzHBXp0Vcco7tedjvOr9tFh8OxZ0mcVqpCJhH
+         3acMg8qVYGiWKh/a4GGgwEvgFPVP2fKJTHogYiqTxAWQqRpl8EGeg9fAdaMCPa0ArJHF
+         FCrw==
+X-Received: by 10.66.88.38 with SMTP id bd6mr15497725pab.184.1368141396421;
+        Thu, 09 May 2013 16:16:36 -0700 (PDT)
+Return-Path: <dan@doxpara.com>
+Received: from [10.0.1.160] (199-83-223-252.PUBLIC.monkeybrains.net. [199.83.223.252])
+        by mx.google.com with ESMTPSA id ze11sm183993pab.22.2013.05.09.16.16.33
+        for <thom@attackvector.org>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 09 May 2013 16:16:35 -0700 (PDT)
+Subject: Re: DaKaRand merge AttackVector Linux Distro
+References: <518984DD.6040609@attackvector.org> <518B692D.8090003@attackvector.org> <CAEW7ACk7ioHVi-2=_LxLsa0VxTinQ4q0OWQ1S_OsU8KT_4-DZA@mail.gmail.com> <518C213D.5090804@attackvector.org> <4B5F41DD-932A-4956-BE73-C26673DA39F0@doxpara.com> <518C2AFF.3000404@attackvector.org>
+From: Dan Kaminsky <dan@doxpara.com>
+Content-Type: text/plain;
+	charset=us-ascii
+X-Mailer: iPhone Mail (10B350)
+In-Reply-To: <518C2AFF.3000404@attackvector.org>
+Message-Id: <82621997-0F79-486B-B9A1-7A8D9B5C6587@doxpara.com>
+Date: Thu, 9 May 2013 16:16:33 -0700
+To: Thom Hastings <thom@attackvector.org>
+Content-Transfer-Encoding: quoted-printable
+Mime-Version: 1.0 (1.0)
+X-Gm-Message-State: ALoCoQmkJPND56JX5gNJFHqLOLpS+Pt1Wuouk/ut8tfcO+wkP4mxKtxMEox5GmTwtHLcg8NAWqfl
+
+Kernel C is under control in modern Linux. I want a userspace fallback, smal=
+l, pristine, embeddable.
+
+Sent from my iPhone
+
+On May 9, 2013, at 4:02 PM, Thom Hastings <thom@attackvector.org> wrote:
+
+> We're talking about C? I can do do C, but considering I'm hoping for a
+> /dev/random or a /dev/urandom level implementation, and Kernel C is not
+> like normal C. I mean I could do a severely hackish implementation which
+> just takes the output from your original
+> http://s3.amazonaws.com/dmk/dakarand-1.0.tgz and formats it in such a
+> way as to be useful to /dev/random and /dev/urandom with some sort of
+> bizarre symlink...
+>=20
+> That was my plan anyway. Happy to pick your brain on this one, when will
+> you be more free?
+>=20
+> On 5/9/13 5:35 PM, Dan Kaminsky wrote:
+>> A bit swamped, you know code?  Could talk you through what I'd like to se=
+e.=20
+>>=20
+>> Sent from my iPhone
+>>=20
+>> On May 9, 2013, at 3:20 PM, Thom Hastings <thom@attackvector.org> wrote:
+>>=20
+>>> Dan Kaminsky,
+>>>=20
+>>> How is your development of DaKaRand going?
+>>> I hope you haven't been too busy, I'm excited--
+>>> I'm readily listing DaKaRand as a feature in my distro.
+>>> Here's my work so far (on bitbucket):
+>>> https://bitbucket.org/attackvector
+>>> Let me know! Ur a boss.
+>>>=20
+>>> Thom Hastings
+>>> http://turing.slu.edu/~hastint
+>>> re: DerbyCon   re: aestetix
+>>>=20
+>>> On 5/9/13 1:41 PM, Dan Kaminsky wrote:
+>>>> I don't have PGP set up right now -- important enough to hide?
+>>>>=20
+>>>>=20
+>>>> 2013/5/9 Thom Hastings <thom@attackvector.org
+>>> <mailto:thom@attackvector.org>>
+>>>>=20
+>>>> http://sf.net/p/attackvector
+>>>>=20
+>>>>=20
+>>>> -------- Original Message --------
+>>>> Subject:     Re: DaKaRand merge AttackVector Linux Distro
+>>>> Date:     Tue, 07 May 2013 17:49:01 -0500
+>>>> From:     Thom Hastings <thom@attackvector.org>
+>>>> To:     Dan Kaminsky <dan@doxpara.com>
+>>>>=20
+>>>>=20
+>>>>=20
+>>>> https://github.com/ksoona/attackvector
+>>>>=20
+>>>> On 4/21/13 1:07 PM, Dan Kaminsky wrote:
+>>>>> Merge it in!  I will either have time to take a look Tuesday, or
+>>>> this upcoming weekend.
+>>>>>=20
+>>>>> On Sun, Apr 21, 2013 at 10:45 AM, Thom Hastings
+>>>> <thom@attackvector.org <mailto:thom@attackvector.org>> wrote:
+>>>>>   I'd love to include your Dakarand release in my distro. If you
+>>>> want to look at the high-level ideas behind the project, take a look
+>>>> at the readme.
+>>>>>=20
+>>>>>   On Sat, Apr 20, 2013 at 6:16 PM, Dan Kaminsky <dan@doxpara.com
+>>>> <mailto:dan@doxpara.com>> wrote:
+>>>>>       Honored. Do it
+>>>>>=20
+>>>>>       Sent from my iPhone
+>>>>>=20
+>>>>>       On Apr 20, 2013, at 4:01 PM, Thom Hastings
+>>>> <thom@attackvector.org <mailto:thom@attackvector.org>> wrote:
+>>>>>>       *freaks the fuck out*
+>>>>>>=20
+>>>>>>       Can I ask you point blank, then: May I add you to the
+>>>> private bitbucket repo for my distribution?
+>>>>>>       Regards,
+>>>>>>       Thom Hastings
+>>>>>>=20
+>>>>>>=20
+>>>>>>       On Sat, Apr 20, 2013 at 3:17 AM, Dan Kaminsky
+>>>> <dan@doxpara.com <mailto:dan@doxpara.com>> wrote:
+>>>>>>           My understanding is that super modern linux kernels
+>>>> finally have a sane RNG.  Working on a minimized Dakarand.  Out soon.
+>>>>>>=20
+>>>>>>           On Fri, Apr 19, 2013 at 10:44 AM, Thom Hastings
+>>>> <thom@attackvector.org <mailto:thom@attackvector.org>> wrote:
+>>>>>>               Dan,
+>>>>>>=20
+>>>>>>               We met at DerybConand had a few drinks at the hotel
+>>>> minibar, where you
+>>>>>>               told me about your Burning Man project (cool!) and
+>>>> we reminisced about
+>>>>>>               our mutual acquaintance, Aestetix.
+>>>>>>=20
+>>>>>>               I'm soliciting your help and/or advice on a project
+>>>> of mine. I'm working
+>>>>>>               on a Linux distribution similar to TAILS
+>>>> (http://tails.boum.org) and I'd
+>>>>>>               really love to implement DaKaRandfor PNRG for the
+>>>> LUKS cryptsetup FDE,
+>>>>>>               as well with any other keys.
+>>>>>>=20
+>>>>>>               I understand that DaKaRand is more theoretical and
+>>>> experimental,
+>>>>>>               however, I feel like this hobbyist distro could use
+>>>> better PNRG, as it's
+>>>>>>               sort of amore modern souped-up "Tin Foil Hat Linux".
+>>>>>>=20
+>>>>>>               Regards,
+>>>>>>               Thom Hastings
+>>>>>>=20
+>>>>>>               P.S. I'm in line for Burning Man tickets in the
+>>>> online-exchange (STEP),
+>>>>>>               but if you know somebody who hasa few extras please
+>>>> let me know.
+>=20
