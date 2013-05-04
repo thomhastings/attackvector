@@ -130,6 +130,7 @@ https://github.com/ksoona/attackvector
      \___/   \___/    
 A collaboration between like-minded individuals:
 kaneda - primary contributor
+	Shoutout to Hardcoded and MassHackers
 thong - organizer / contributor
 cykros - tester
 cherez - server part-timer
