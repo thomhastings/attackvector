@@ -1,5 +1,8 @@
 #! /bin/bash
 # Enable our special sdmem shutdown/reboot script
 
-chkconfig -a sdmem
-chkconfig sdmem 06
+ln -s /etc/init.d/sdmem /etc/rc0.d/K01sdmem
+ln -s /etc/init.d/sdmem /etc/rc6.d/K01sdmem
+
+#chkconfig -a sdmem
+#chkconfig sdmem 06

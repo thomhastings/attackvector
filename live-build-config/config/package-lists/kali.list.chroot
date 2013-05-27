@@ -119,12 +119,14 @@ paros
 radare2
 rdesktop
 rfkill
+ruby1.9.1
+ruby1.9.1-dev
+rubygems
 screen
 seahorse
 seahorse-nautilus
 secure-delete
 sendemail
-snmp
 snmpd
 sqlite3
 sshfs
