@@ -1,8 +1,8 @@
 [AttackVector Linux](http://attackvector.org): the dragon has tails
 ===================================================================
-![Desktop Screenshot](https://sourceforge.net/p/attackvector/screenshot/Screen%20Shot%202013-05-07%20at%206.16.12%20PM.png)  
-**AttackVector Linux** is a new distribution for anonymized penetration and security.  
-It is based on [Kali](http://kali.org) and [TAILS](https://tails.boum.org), which are both based on [Debian](http://debian.org).
+![screenshot](http://josh.myhugesite.com/static/images/attackvector-wallpaper.jpg)  
+**AttackVector Linux** is a new distribution for anonymized security testing.  
+It is based on [Kali](http://kali.org) with ideas gleaned from [TAILS](https://tails.boum.org) (both Debian based), with tools not found in either.
 
 -------------------------------------------------------------------
 
@@ -13,56 +13,165 @@ Design Philosophy
 While Kali requires a modified kernel for network drivers to use injection and so forth,  
 TAILS is designed from the bottom up for encryption, and anonymity. _Nmap can't UDP via Tor._  
 **The intention of AttackVector Linux is to provide the capability to anonymize attacks  
-_while warning the user when he or she takes actions that may compromize anonymity._**  
+_while warning the user when he or she takes actions that may compromise anonymity._**  
 The two projects have different design philosophies that can directly conflict with one another.  
-In spite of this, the goal of **AttackVector Linux** is to integrate them complementarily into one OS.
+In spite of this, the goal of **AttackVector Linux** is to integrate them into one complimentary OS.
 
 ##### Features
-* The anonymity of [TAILS](https://tails.boum.org)
-* The privacy of [SRWare Iron](http://www.srware.net/en/software_srware_iron.php)
-* The password recovery of [hashkill](http://www.gat3way.eu/hashkill)
-* The cryptography of [DaKaRand](http://dankaminsky.com/2012/08/15/dakarand/)
+* APT/Iceweasel/wget all run through TOR (using Polipo)
+* Iceweasel includes cookie monster, HTTPSEverywhere, TORButton, and other great extensions
+* Incredible password recovery tools:
+** The password recovery of [hashkill](http://www.gat3way.eu/hashkill)
+** OCLHashcat
+** Many more!
+* Great Ruby tools like [Ronin](https://github.com/ronin-ruby/)
 * The penetration tools of [Kali](http://kali.org)
-* Additional tools for pen-testing, password cracking, and more
+* Other tools like FakeAP, sdmem
 
 Build Instructions
 ==================
-[ linux / build / kali_coms.txt ]
 
-1. Install prerequisites in Kali:
+## Install prerequisites for Kali build. This can be done in Debian Squeeze, but we recommend starting from a Kali install:
 
-    ~~~~~~
-    apt-get install git live-build cdebootstrap kali-archive-keyring
-    cd /tmp
-    git clone git://git.kali.org/live-build-config.git
-    apt-get remove libdebian-installer4
-    apt-get install libdebian-installer4
-    ~~~~~~
+* apt-get install git live-build cdebootstrap kali-archive-keyring
+* cd /tmp
+* git clone git clone https://attackvector@bitbucket.org/attackvector/attackvector-linux.git
+* apt-get remove libdebian-installer4
+* apt-get install libdebian-installer4
+** We reinstall libdebian-installer4 due to a weird bug
+* cd attackvector-linux/live-build-config
 
-2. Copy down git repo [ linux / kali / config ]
+## Live build:
 
-    ~~~~~~
-    git clone git://github.com/ksoona/attackvector.git
-    cp attackvector/distro/kali/config /tmp/live-build-config/config
-    cd /tmp/live-build-config
-    ~~~~~~
-
-3. Live build:
-
-    ~~~~~~
-    lb clean --purge
-    dpkg --add-architecture amd64
-    lb config --architecture amd64 --mirror-binary http://http.kali.org/kali --mirror-binary-security http://security.kali.org/kali-security --apt-options "--force-yes --yes"
-    lb build
-    ~~~~~~
-
-(Notice the similarity to [Kali Live-Build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso).)
+* lb clean --purge
+* dpkg --add-architecture amd64
+* apt-get update
+* lb config --architecture amd64 --mirror-binary http://http.kali.org/kali --mirror-binary-security http://security.kali.org/kali-security --apt-options "--force-yes --yes"
+* lb build
 
 Download
 ========
-MD5 (attackvector-linux-0.0.1alpha-64bit.torrent) = 5efeee92d4e7bf391f4bb406eb00b53c  
-mirror [BitBucket](https://bitbucket.org/attackvector/attackvector-linux/downloads)  
-MD5 (attackvector-linux-0.0.1alpha-64bit.iso) = 359e2147206a5275ec46a7c997d66f8c
+* mirror [BitBucket](https://bitbucket.org/attackvector/attackvector-linux/downloads)  
+* MD5 (attack_vector_alpha_0.1.1b.iso) = 99243d5f4132116e2e9606d6b0c98e6f
+
+Add-ons list
+========
+##### Additional Debian Packages:
+
+###### Packages for service wrapper, supports i2p               
+* libservice-wrapper-java                                       
+* libservice-wrapper-jni                                        
+* service-wrapper                                               
+                                                              
+###### Package for hashkill                                        
+* libssl-dev                                                    
+* libjson0-dev                                                  
+* amd-opencl-dev                                                
+* nvidia-opencl-dev
+
+###### Packages we want in general
+* adduser
+* binutils
+* bsdutils
+* chkconfig
+* coreutils
+* curl
+* diffutils
+* dnsutils
+* dsniff
+* findutils
+* florence
+* fuse-utils
+* gnupg
+* gnupg-agent
+* gnupg-curl
+* gnutls-bin
+* gzip
+* haveged
+* i2p
+* i2p-router
+* ipheth-utils
+* iproute
+* iptstate
+* iputils-ping
+* iputils-tracepath
+* john
+* john-data
+* keepassx
+* laptop-mode-tools
+* libsqlite3-dev
+* libsqlite3-ruby1.9.1
+* liferea
+* liferea-data
+* lockfile-progs
+* lua5.1
+* lzma
+* moreutils
+* mtools
+* ncurses-base
+* ncurses-bin
+* net-tools
+* netcat-traditional
+* nmap
+* openssl
+* pidgin
+* pidgin-data
+* pidgin-otr
+* polipo
+* poppler-utils
+* pwgen
+* rfkill
+* ruby1.9.1
+* ruby1.9.1-dev
+* rubygems
+* seahorse
+* seahorse-nautilus
+* secure-delete
+* sqlite3
+* sshfs
+* ssss
+* tor
+* tor-arm
+* tor-geoipdb
+* torsocks
+* tsocks
+* unar
+* unzip
+* vim-nox
+* vim-runtime
+* vim-tiny
+* wget
+* whois
+* xul-ext-adblock-plus
+* xul-ext-cookie-monster
+* xul-ext-foxyproxy-standard
+* xul-ext-https-everywhere
+* xul-ext-noscript
+* xul-ext-torbutton
+
+###### Other Source Packages/Binaries:
+* hashkill
+* fakeap
+* quicksnap
+
+###### Ruby Gems:
+* gem install ronin
+* gem install ronin-asm
+* gem install ronin-dorks
+* gem install ronin-exploits
+* gem install ronin-gen
+* gem install ronin-grid
+* gem install ronin-php
+* gem install ronin-scanners
+* gem install ronin-sql
+* gem install ronin-support
+* gem install ronin-web
+
+###### Configuration:
+* Polipo -> TOR
+* wget -> Polipo
+* APT -> Polipo
+* sdmem (wipes memory at shutdown/reboot)
 
 -------------
 ###### social
@@ -90,22 +199,18 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 ##### Git
 * [Kali git repositories](http://git.kali.org/gitweb/)
 * [TAILS git repository](http://git.immerda.ch/?p=amnesia.git)
-* [GitLab.org](http://gitlab.org) for hosting repos cron pull'd from the above (see **base-git-subtree.sh**)
-* [GitLab-CI](https://github.com/gitlabhq/gitlab-ci#gitlab-ci-is-an-open-source-continuous-integration-server) Continuous Intergration system uses [Vagrant](http://vagrantup.com), just like [TAILS build](https://tails.boum.org/contribute/build/#index1h1) scripts
 * Configure build system to generate & test ISOs
 
 ##### Tasks
-* Evaluate features of each distro & unify them into a single kernel
 * Add warning messages for anonymity risks
 * Full Disk Encryption (FDE) w/ [LUKS](https://code.google.com/p/cryptsetup/)
 * Host on [AttackVector.org](http://attackvector.org)
 * Provide documentation
-* Continue to integrate high quality tools
-* Clone the Kali repos so that AttackVector can stand-alone
-** Change live build to run off this new mirror
+* Debian repositories
+* Add more tools!
 
-![Tor Connected](https://sourceforge.net/p/attackvector/screenshot/Screen%20Shot%202013-05-07%20at%206.14.18%20PM.png)
+![Tor Connected](http://josh.myhugesite.com/static/images/attackvector-test.jpg)
 --------------
 ###### license
 > [![Creative Commons License](http://i.creativecommons.org/l/by/3.0/80x15.png)](http://creativecommons.org/licenses/by/3.0/)[![Open Source](http://www.ipol.im/static/badges/open-source.png)](http://www.gnu.org/licenses/gpl.html)[![Hacker Emblem](http://catb.org/hacker-emblem/hacker.png)](http://www.catb.org/hacker-emblem/)  
-> Text under [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/). Code under [GNU Public License](http://www.gnu.org/licenses/gpl.html). © Kenneth Soona 2013
+> Text under [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/). Code under [GNU Public License](http://www.gnu.org/licenses/gpl.html).
