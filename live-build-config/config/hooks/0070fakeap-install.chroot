@@ -5,16 +5,17 @@
 # Description: Download and "install" fakeap
 
 # Download
-curl --fail "http://www.blackalchemy.to/project/fakeap/download.php?name=fakeap-0.3.2.tar.gz" -O
+wget "http://www.blackalchemy.to/project/fakeap/download.php?name=fakeap-0.3.2.tar.gz"
 
 if [ $? -ne 0 ]
 then
 	echo "Error downloading FakeAP"
-	exit 1
+else
+	# Unpack and clean up
+	tar -xzf download.php\?name\=fakeap-0.3.2.tar.gz && rm download.php\?name\=fakeap-0.3.2.tar.gz && cd fakeap-0.3.2/
+
+	# Move into place
+	ln -s `pwd`/fakeap.pl /usr/bin/fakeap.pl 
 fi
 
-# Unpack and clean up
-tar -xzf download.php\?name\=fakeap-0.3.2.tar.gz && rm download.php\?name\=fakeap-0.3.2.tar.gz && cd fakeap-0.3.2/
-
-# Move into place
-ln -s `pwd`/fakeap.pl /usr/bin/fakeap.pl 
+exit 0
