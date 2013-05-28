@@ -18,20 +18,20 @@ else
 	exit 0
 fi
 
-which chkconfig
-if [ $? -ne 0 ]
-then
-	echo "Error: chkconfig not found on path"
-else
-	# Now turn off tor as a service and turn vidalia on at gnome start for root
-	chkconfig tor off
+# Now turn off tor as a service and turn vidalia on at gnome start for root
+# chkconfig tor off # chkconfig is not to be trusted
+rm /etc/rc2.d/*tor
+rm /etc/rc3.d/*tor
+rm /etc/rc4.d/*tor
+rm /etc/rc5.d/*tor
 
-	# Look at includes.chroot/etc/xdg/autostart/vidalia-autostart.desktop
-	# Maybe this should go in includes.chroot/root/.config/autostart/vidalia-autostart.desktop
+# Now turn our vidalia checker on
+ln -s /etc/init.d/vidalia_check /etc/rc2.d/S18vidalia_check
+ln -s /etc/init.d/vidalia_check /etc/rc3.d/S18vidalia_check
+ln -s /etc/init.d/vidalia_check /etc/rc4.d/S18vidalia_check
+ln -s /etc/init.d/vidalia_check /etc/rc5.d/S18vidalia_check
 
-	# Turn our vidalia checker on to ensure good directory and such
-	chkconfig -a vidalia_check
-	chkconfig vidalia_check on
-fi
+# Look at includes.chroot/etc/xdg/autostart/vidalia-autostart.desktop
+# Maybe this should go in includes.chroot/root/.config/autostart/vidalia-autostart.desktop
 
 exit 0
