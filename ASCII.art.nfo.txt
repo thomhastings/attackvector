@@ -131,6 +131,7 @@ https://github.com/ksoona/attackvector
 A collaboration between like-minded individuals:
 kaneda - primary contributor
 	Shoutout to Hardcoded and MassHackers
-thong - organizer / contributor
+	You can find me in #sectards, #masshackers, and of course #attackvector on Freenode
+thong - tester
 cykros - tester
 cherez - server part-timer
