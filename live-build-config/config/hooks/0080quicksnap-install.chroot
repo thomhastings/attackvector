@@ -6,15 +6,15 @@
 # Commented until further notice, as his site is down
 
 # Download
-#wget "https://www.soldierx.com/system/files/sxlabs/projects/scryptz0/quicksnap.py_.tar.gz"
+wget "https://www.soldierx.com/system/files/sxlabs/projects/scryptz0/quicksnap.py_.tar.gz"
 
-#if [ $? -ne 0 ]
-#then
-#	echo "Failed to download quicksnap"
-#	exit 1
-#fi
+if [ $? -ne 0 ]
+then
+	echo "Failed to download quicksnap"
+	exit 1
+fi
 
-#tar -zxf quicksnap.py_.tar.gz
-#mv quicksnap.py /usr/bin/
+tar -zxf quicksnap.py_.tar.gz
+mv quicksnap.py /usr/bin/
 
 exit 0
