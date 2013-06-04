@@ -46,6 +46,8 @@ coreutils
 cowsay
 cryptsetup
 curl
+deb.torproject.org-keyring
+debtags
 desktop-base
 diffutils
 dnsutils
@@ -67,6 +69,7 @@ gnupg-curl
 gnutls-bin
 gparted
 grep
+guake
 #if ARCHITECTURES i386 amd64
 guymager
 #endif
@@ -137,11 +140,13 @@ sudo
 tcpdump
 tftp
 tightvncserver
+tilda
 tmux
 tor
 #if ARCHITECTURES armel armhf
 tor-arm
 #endif
+tree
 tor-geoipdb
 torsocks
 tsocks
@@ -171,6 +176,7 @@ xul-ext-https-everywhere
 xul-ext-noscript
 xul-ext-torbutton
 zenmap
+zsh
 
 # Graphical desktops depending on the architecture
 #
@@ -179,16 +185,22 @@ zenmap
 # or you can just comment everything except the package of your
 # preferred desktop.
 
+gnome-core
+kali-defaults
+kali-root-login
+desktop-base
+
 #if ARCHITECTURES i386 amd64
 # *** GNOME DESKTOP ***
 empathy
 gnome-control-center
 apache2.2-bin
 gnome-user-share
-gnome-core
+#gnome-core
 gnome-brave-icon-theme
 gnome-shell-extensions
 gnome-orca
+gnome-share
 # *** For XP Theme *** Could not get this working, still have custom talika deb, win7 theme installer if anyone wants to have a shot at it
 #libc6-i386
 #ia32-libs
@@ -222,7 +234,7 @@ network-manager
 # kdm
 
 # *** LXDE DESKTOP ***
-# lxde
+lxde
 
 # *** Enlightenment DR17 DESKTOP ***
 # e17
@@ -231,7 +243,11 @@ network-manager
 # | NOTE: The mate desktop requires other changes to the live config.
 # | See http://docs.kali.org/live-build/customize-the-kali-desktop-environment
 # | for details
-# xorg
-# mate-archive-keyring
-# mate-core
-# mate-desktop-environment
+xorg
+mate-archive-keyring
+mate-core
+mate-desktop-environment
+
+# complements of ubuntu satanic
+satanic-icon-themes
+buuf-icon-theme
