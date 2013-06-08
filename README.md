@@ -10,6 +10,11 @@ Design Philosophy
 =================
 **Yin** and _Yang_
 
+_**AttackVector Linux (A.V.L.)**_ is a [Kali](http://kali.org) [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) `recipe`
+The biggest add-on is [Tor](http://torproject.org) _installed_ by default. It is taken from [Tails](http://tails.boum.org)' [design](https://tails.boum.org/contribute/design/).  
+
+**Kali** vs. _Tails_
+
 While Kali requires a modified kernel for network drivers to use injection and so forth,  
 TAILS is designed from the bottom up for encryption, and anonymity. _Nmap can't UDP via Tor._  
 **The intention of AttackVector Linux is to provide the capability to anonymize attacks  
@@ -20,57 +25,120 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them into o
 ##### Features
 * APT/Iceweasel/wget all run through TOR (using Polipo)
 * Iceweasel includes cookie monster, HTTPSEverywhere, TORButton, and other great extensions
-* Incredible password recovery tools:
-** The password recovery of [hashkill](http://www.gat3way.eu/hashkill)
-** OCLHashcat
-** Many more!
+* Incredible password recovery tools: [hashkill](http://www.gat3way.eu/hashkill) OCLHashcat, many more!
 * Great Ruby tools like [Ronin](https://github.com/ronin-ruby/)
-* The penetration tools of [Kali](http://kali.org)
+* Every penetration testing security tool from [Kali](http://kali.org). (Yes, [really](https://gist.github.com/ksoona/5691841).)
+* Additional tools for pen-testing, password cracking, and more
 * Other tools like FakeAP, sdmem
-
-Build Instructions
-==================
-
-## Install prerequisites for Kali build. This can be done in Debian Squeeze, but we recommend starting from a Kali install:
-
-* apt-get install git live-build cdebootstrap kali-archive-keyring
-* cd /tmp
-* git clone git clone https://attackvector@bitbucket.org/attackvector/attackvector-linux.git
-* apt-get remove libdebian-installer4
-* apt-get install libdebian-installer4
-** We reinstall libdebian-installer4 due to a weird bug
-* cd attackvector-linux/live-build-config
-
-## Live build:
-
-* lb clean --purge
-* dpkg --add-architecture amd64
-* apt-get update
-* lb config --architecture amd64 --mirror-binary http://http.kali.org/kali --mirror-binary-security http://security.kali.org/kali-security --apt-options "--force-yes --yes"
-* lb build
 
 Download
 ========
 * mirror [BitBucket](https://bitbucket.org/attackvector/attackvector-linux/downloads)  
+* mirror [Act4Security.com](http://act4security.com/attack_vector_alpha_0.1.1b.iso)  
 * MD5 (attack_vector_alpha_0.1.1b.iso) = 99243d5f4132116e2e9606d6b0c98e6f
 
-Add-ons list
-========
+F.A.Q.
+======
+
+**Q: Why are you doing this/whom are you doing this for?**
+_A: My design goals were inspired by security professionals who have little time and/or money to put towards finding new tools/frameworks/configurations that would benefit them. That isn't to say this is the only group of people who will find this distro beneficial, but it is the group that I was hoping would find use in the extended tools/toolsets/configurations.
+_
+**Q: What's different about this distro, as opposed to Kali?**
+_A: One of the design goals is anonymity, which security professionals require on various job sites, especially for black-box testing. To accomplish this I took much of the TOR/TSOCKS configuration from TAILS and put it in the Kali build, including starting Vidalia with the GNOME3 window manager. I added many things at the behest of friends, including [Ronin](https://github.com/ronin-ruby/), [FakeAP](http://www.blackalchemy.to/project/fakeap/), and more. I also added a bunch of packages from the regular old Debian repos that I like to see. For a full list (more of less) of changes check out the [add-ons file](http://josh.myhugesite.com/static/docs/kali_addons.txt), and is also listed below
+_
+**Q: Can Tor be turned off?**
+_A: Yes, to disable TOR globally simple exit Vidalia, then run the command "/etc/init.d/polipo stop", and finally comment out the config in "/etc/apt/apt.conf.d/0000runtime-proxy" and "/etc/wgetrc". FYI, TOR does not affect anything that is not intentionally proxied through Polipo, meaning that it will not interfere with NMAP, etc.
+_
+**Q: Is this only GNOME 3, or can I switch to MATE/KDE/alternate?**
+_A: Right now I'm building for GNOME 3 specifically, but I will come out with a KDE version due to popular demand. Feel free to give your input regarding alternate window managers and I'll see what I can do.
+_
+**Edit:** Join the UI discussion [here](https://bitbucket.org/attackvector/attackvector-linux/issue/2/broad-ui-discussion). _~Thom_
+
+**Q: One of your design goals is a Windows XP theme? (camouflage)**
+_A: This is one that's up for debate, but given Thom's insistence that we include it I will get around to it at some point in the near future.
+_
+**Q: Aren't kiddies going to use this tool to... ChaOS?!**
+_A: Probably. I'm not a lawyer. Here is an official-ish blurb: Customarily, I (@KenSoona) am not responsible for any malicious use of this tool, and I hope that releasing it and its source code engenders better information security for the community at large.
+_
+
+Build Instructions
+==================
+## Install prerequisites for Kali build. This can be done in Debian Squeeze, but we recommend starting from a Kali install:  
+```
+#!/bin/sh
+apt-get install git live-build cdebootstrap kali-archive-keyring
+cd /tmp
+git clone git clone https://attackvector@bitbucket.org/attackvector/attackvector-linux.git
+apt-get remove libdebian-installer4   # /* We reinstall libdebian-installer4 */
+apt-get install libdebian-installer4  # /* due to a weird bug */
+cd attackvector-linux/live-build-config
+```
+## Live build:  
+```
+#!/bin/sh
+lb clean --purge
+dpkg --add-architecture amd64
+apt-get update
+lb config --architecture amd64 --mirror-binary http://http.kali.org/kali --mirror-binary-security http://security.kali.org/kali-security --apt-options "--force-yes --yes"
+lb build
+```
+
+#### Issue Tracker:
+Please submit all requests for bugfixes and features for our next release cycle to [JIRA](https://bitbucket.org/attackvector/attackvector-linux/issues/new).  
+We release under an "early, often" philosophy.
+
+##### Target use case(s):
+* Research labs targeting malware servers such as command and control servers.
+* Legitimate penetration testing consulting companies needing to do black-box testing.
+* `hacktivists` working within oppressive governmental regiemes.
+* Academics and students working on experimental projects.
+* Intelligence agencies seeking plausible deniability.
+
+When I was asking my mentor, a computer security professor, about the ethically grey implications of the project, she replied, "You can always just call it an academic exercise."
+
+Further Q&A ([/r/netsec](http://redd.it/1fcrjh))
+========================
+I'd say my answer is twofold:
+
+* 1.) You're right, on the surface, no difference, all this FOSS was available elsewhere (different packages and repositories). However, I'd argue:
+* 2.) No one had stiched the pieces together in this particular way. I'd argue that Tails features and [design goals like these](https://tails.boum.org/doc/about/features/index.en.html#index3h2) are noble ones for a Kali fork.
+
+Kali's [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) is designed for uses like this. Think of it as a post-install script that runs as you generate the ISO instead, so it's sorta like a pre-install? IDK
+
+via **@kanedasan**:  
+lead dev/primary contributor/organizer of this project;  
+I work closely with 5tinger, but I'm the one implementing the changes you're seeing. I'd like to clarify a few things:
+* 1) TOR is not configured "globally". It does not break UDP scans. It is set up such that things like wget and Iceweasel use it out of the box but can easily be switched off (in the case of Iceweasel, just hit the TOR button!)
+* 2) The additional tools you will find are not ones that many people know about, hence why they were not included in Kali to begin with. Further, I have received permission to distribute any and all of this software (if it did not come with a clear, legal license)
+* 3) You can go and look at the build scripts: this is how the ISOs are built, feel free to build it yourself and compare the resultant contents
+* 4) As stated in the FAQ, my design goals are to reach pen-testers and security professionals who do not have the time, money, and/or patience to build such a thing, and use them to get feedback regarding further innovations to this product. The immediate intent is not to aid "hacktivists working within oppressive governmental regiemes," but if it does in fact help them, then that's OK too
+* 5) This is in **ALPHA STAGE**: for any and all requests please see our [JIRA](https://bitbucket.org/attackvector/attackvector-linux/issues/new)
+
+Quotes
+======
+```
+<muts> so basically, your project can be represented as a "live-build" recipe.
+<`butane> AttackVector merges the tools of Kali and the anonymity of Tails into the scariest Linux security distribution on the internet
+```
+
+Add-ons List
+============
 ##### Additional Debian Packages:
 
-###### Packages for service wrapper, supports i2p               
-* libservice-wrapper-java                                       
-* libservice-wrapper-jni                                        
-* service-wrapper                                               
-                                                              
-###### Package for hashkill                                        
-* libssl-dev                                                    
-* libjson0-dev                                                  
-* amd-opencl-dev                                                
+###### Packages for service wrapper, supports i2p
+* libservice-wrapper-java
+* libservice-wrapper-jni
+* service-wrapper
+
+###### Package for hashkill
+* libssl-dev
+* libjson0-dev
+* amd-opencl-dev
 * nvidia-opencl-dev
 
 ###### Packages we want in general
 * adduser
+* armitage
 * binutils
 * bsdutils
 * chkconfig
@@ -106,6 +174,7 @@ Add-ons list
 * lockfile-progs
 * lua5.1
 * lzma
+* metasploit
 * moreutils
 * mtools
 * ncurses-base
@@ -130,6 +199,7 @@ Add-ons list
 * sqlite3
 * sshfs
 * ssss
+* thc-hydra
 * tor
 * tor-arm
 * tor-geoipdb
@@ -175,8 +245,8 @@ Add-ons list
 
 -------------
 ###### social
-> IRC **#attackvector** on Freenode  
-> [![Tweet This](http://ampedstatus.org/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png)](https://twitter.com/intent/tweet?text=%40attackvector)[![Facebook](http://daviddegraw.org/wp-content/plugins/tweet-this/icons/tt-facebook-micro4.png)](http://facebook.com/AttackVector-Linux)[![Linkedin](http://www.hollybrady.com/bradyholly/wp-content/plugins/tweet-this/icons/en/linkedin/tt-linkedin-micro4.png)](http://linkedin.com/in/AttackVector)  
+> IRC **#AttackVector** on Freenode  
+> [![Tweet This](http://ampedstatus.org/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png)](https://twitter.com/intent/tweet?text=%40attackvector)[![Facebook](http://richardxthripp.thripp.com/files/plugins/tweet-this/icons/tt-facebook-micro4.png)](http://facebook.com/attackVector)[![Linkedin](http://www.hollybrady.com/bradyholly/wp-content/plugins/tweet-this/icons/en/linkedin/tt-linkedin-micro4.png)](http://linkedin.com/in/attackVector)  
 > ![Web Mockup](https://sourceforge.net/p/attackvector/screenshot/attackvector_header.jpg)  
 > (Web Mockup)
 
@@ -202,10 +272,21 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 * Configure build system to generate & test ISOs
 
 ##### Tasks
+* [Help port TAILS to Wheezy](https://tails.boum.org/todo/Wheezy/)
+* Evaluate features of each distro & unify them into a single kernel
+* Provide two layers of functionality: [desktop](http://www.dorkfolio.net/kernel-repository) install and [live](http://www.irongeek.com/i.php?page=videos/portable-boot-devices-usb-cd-dvd)
+* Evaluate features of each distro & unify them into a single kernel
 * Add warning messages for anonymity risks
 * Full Disk Encryption (FDE) w/ [LUKS](https://code.google.com/p/cryptsetup/)
++ on flash storage jump drive for Live Linux
++ on dedicated install with [wordlists galore](https://github.com/thomhastings/bt5-scripts/blob/master/get-wordlists.sh)
 * Host on [AttackVector.org](http://attackvector.org)
 * Provide documentation
+* [HTTPS Everywhere](https://www.eff.org/https-everywhere)
+* Debian repositories
+* Continue to integrate high quality tools
+* Clone the Kali repos so that AttackVector can stand-alone
++ Change live build to run off this new mirror
 * Debian repositories
 * Add more tools!
 
