@@ -1,7 +1,7 @@
 [AttackVector Linux](http://attackvector.org): the dragon has tails
 =================================================================== 
 **AttackVector Linux** is a new distribution for anonymized security testing.  
-It is based on [Kali](http://kali.org) with ideas gleaned from [TAILS](https://tails.boum.org) (both Debian based), with tools not found in either.
+It is based on [custom](http://sf.net/p/customwheezy7) [Kali](http://kali.org) with ideas gleaned from [Tails](https://tails.boum.org) (both Debian based), with tools not found in either.
 
 -------------------------------------------------------------------
 
@@ -9,7 +9,7 @@ Design Philosophy
 =================
 **Yin** and _Yang_
 
-_**AttackVector Linux (A.V.L.)**_ is a [Kali](http://kali.org) [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) `recipe`
+_**AttackVector Linux (A.V.L.)**_ is a [Kali](http://kali.org) [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) "recipe", which can be thought of as add-ons for Kali live-build.  
 The biggest add-on is [Tor](http://torproject.org) _installed_ by default. It is taken from [Tails](http://tails.boum.org)' [design](https://tails.boum.org/contribute/design/).  
 
 **Kali** vs. _Tails_
