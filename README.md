@@ -9,7 +9,7 @@ Design Philosophy
 =================
 **Yin** and _Yang_
 
-_**AttackVector Linux (A.V.L.)**_ is a [Kali](http://kali.org) [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) "recipe", which can be thought of as add-ons for Kali live-build.  
+_**AttackVector Linux_ (A.V.L.)** is a [Kali](http://kali.org) [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) "recipe", which can be thought of as add-ons for Kali live-build.  
 The biggest add-on is [Tor](http://torproject.org) _installed_ by default. It is taken from [Tails](http://tails.boum.org)' [design](https://tails.boum.org/contribute/design/).  
 
 **Kali** vs. _Tails_
