@@ -1,6 +1,5 @@
 [AttackVector Linux](http://attackvector.org): the dragon has tails
-===================================================================
-![screenshot](http://josh.myhugesite.com/static/images/attackvector-wallpaper.jpg)  
+=================================================================== 
 **AttackVector Linux** is a new distribution for anonymized security testing.  
 It is based on [Kali](http://kali.org) with ideas gleaned from [TAILS](https://tails.boum.org) (both Debian based), with tools not found in either.
 
@@ -23,12 +22,13 @@ The two projects have different design philosophies that can directly conflict w
 In spite of this, the goal of **AttackVector Linux** is to integrate them into one complimentary OS.
 
 ##### Features
-* APT/Iceweasel/wget all run through TOR (using Polipo)
-* Iceweasel includes cookie monster, HTTPSEverywhere, TORButton, and other great extensions
+* apt/iceweasel/wget all run through tor (using polipo)
+* Iceweasel includes cookie monster, HTTPSeverywhere, TORbutton, and other great extensions
 * Incredible password recovery tools: [hashkill](http://www.gat3way.eu/hashkill) OCLHashcat, many more!
 * Great Ruby tools like [Ronin](https://github.com/ronin-ruby/)
 * Every penetration testing security tool from [Kali](http://kali.org). (Yes, [really](https://gist.github.com/ksoona/5691841).)
 * Additional tools for pen-testing, password cracking, and more
+* Dedicated install with FDE and [wordlists galore](https://github.com/thomhastings/bt5-scripts/blob/master/get-wordlists.sh).
 * Other tools like FakeAP, sdmem
 
 Download
@@ -39,27 +39,35 @@ Download
 
 F.A.Q.
 ======
+**Q: Why are you doing this/whom are you doing this for?**  
+_A: My design goals were inspired by security professionals who have little time and/or money to put towards finding new tools/frameworks/configurations that would benefit them. That isn't to say this is the only group of people who will find this distro beneficial, but it is the group that I was hoping would find use in the extended tools/toolsets/configurations._
 
-**Q: Why are you doing this/whom are you doing this for?**
-_A: My design goals were inspired by security professionals who have little time and/or money to put towards finding new tools/frameworks/configurations that would benefit them. That isn't to say this is the only group of people who will find this distro beneficial, but it is the group that I was hoping would find use in the extended tools/toolsets/configurations.
-_
-**Q: What's different about this distro, as opposed to Kali?**
-_A: One of the design goals is anonymity, which security professionals require on various job sites, especially for black-box testing. To accomplish this I took much of the TOR/TSOCKS configuration from TAILS and put it in the Kali build, including starting Vidalia with the GNOME3 window manager. I added many things at the behest of friends, including [Ronin](https://github.com/ronin-ruby/), [FakeAP](http://www.blackalchemy.to/project/fakeap/), and more. I also added a bunch of packages from the regular old Debian repos that I like to see. For a full list (more of less) of changes check out the [add-ons file](http://josh.myhugesite.com/static/docs/kali_addons.txt), and is also listed below
-_
-**Q: Can Tor be turned off?**
-_A: Yes, to disable TOR globally simple exit Vidalia, then run the command "/etc/init.d/polipo stop", and finally comment out the config in "/etc/apt/apt.conf.d/0000runtime-proxy" and "/etc/wgetrc". FYI, TOR does not affect anything that is not intentionally proxied through Polipo, meaning that it will not interfere with NMAP, etc.
-_
-**Q: Is this only GNOME 3, or can I switch to MATE/KDE/alternate?**
-_A: Right now I'm building for GNOME 3 specifically, but I will come out with a KDE version due to popular demand. Feel free to give your input regarding alternate window managers and I'll see what I can do.
-_
-**Edit:** Join the UI discussion [here](https://bitbucket.org/attackvector/attackvector-linux/issue/2/broad-ui-discussion). _~Thom_
+**Q: What's different about this distro, as opposed to Kali?**  
+_A: One of the design goals is anonymity, which security professionals require on various job sites, especially for black-box testing. To accomplish this I took much of the TOR/TSOCKS configuration from TAILS and put it in the Kali build, including starting Vidalia with the GNOME3 window manager. I added many things at the behest of friends, including [Ronin](https://github.com/ronin-ruby/), [FakeAP](http://www.blackalchemy.to/project/fakeap/), and more. I also added a bunch of packages from the regular old Debian repos that I like to see. For a full list (more of less) of changes is listed below_
 
-**Q: One of your design goals is a Windows XP theme? (camouflage)**
-_A: This is one that's up for debate, but given Thom's insistence that we include it I will get around to it at some point in the near future.
-_
-**Q: Aren't kiddies going to use this tool to... ChaOS?!**
-_A: Probably. I'm not a lawyer. Here is an official-ish blurb: Customarily, I (@KenSoona) am not responsible for any malicious use of this tool, and I hope that releasing it and its source code engenders better information security for the community at large.
-_
+**Q: Can Tor be turned off?**  
+_A: Yes, to disable Tor globally simple exit Vidalia, then run the command "/etc/init.d/polipo stop", and finally comment out the config in "/etc/apt/apt.conf.d/0000runtime-proxy" and "/etc/wgetrc". FYI, TOR does not affect anything that is not intentionally proxied through Polipo, meaning that it will not interfere with NMAP, etc._
+
+**Q: Is this only GNOME 3, or can I switch to MATE/KDE/alternate?**  
+_Kaneda: Right now I'm building for GNOME 3 specifically, but I will come out with a KDE version due to popular demand. Feel free to give your input regarding alternate window managers and I'll see what I can do._
+_Thom_: I like compiz, tiling window managers, and buuf icon theme.
+Here's a brainstorm:
+[razor-qt](http://razor-qt.org)
+[compiz](http://compiz.org)
+[qtile](http://qtile.org)
+[openbox](http://openbox.org)
+[fluxbox](http://fluxbox.org)
+[ion](http://tuomov.iki.fi/software)
+I also love the Buuf icon theme:
+[buuf](http://buuficontheme.free.fr)
+  
+**Q: One of your design goals is a Windows XP theme? (camouflage)**  
+_Kaneda: This is one that's up for debate, but given Thom's insistence that we include it I will get around to it at some point in the near future._
+_Thom_: Here's the link from Tails' design: [Windows Camouflage](https://tails.boum.org/doc/first_steps/startup_options/windows_camouflage/index.en.html), also: [phillips321 did it on BT5](http://www.phillips321.co.uk/2012/08/28/making-backtrack5-look-like-xp/).
+  
+**Q: Aren't kiddies going to use this tool to... ChaOS?!**  
+_A: Probably. I'm not a lawyer. Here is an official-ish blurb: Customarily, I (@KenSoona) am not responsible for any malicious use of this tool, and I hope that releasing it and its source code engenders better information security for the community at large._
+
 
 Build Instructions
 ==================
@@ -98,17 +106,14 @@ When I was asking my mentor, a computer security professor, about the ethically 
 
 Further Q&A ([/r/netsec](http://redd.it/1fcrjh))
 ========================
-I'd say my answer is twofold:
+Q: How is this different from BackBox?
 
 * 1.) You're right, on the surface, no difference, all this FOSS was available elsewhere (different packages and repositories). However, I'd argue:
 * 2.) No one had stiched the pieces together in this particular way. I'd argue that Tails features and [design goals like these](https://tails.boum.org/doc/about/features/index.en.html#index3h2) are noble ones for a Kali fork.
+* 3.) Kali's [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) is designed for uses like this. Think of it as a post-install script that runs as you generate the ISO instead, so it's sorta like a pre-install? IDK
 
-Kali's [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) is designed for uses like this. Think of it as a post-install script that runs as you generate the ISO instead, so it's sorta like a pre-install? IDK
-
-via **@kanedasan**:  
-lead dev/primary contributor/organizer of this project;  
-I work closely with 5tinger, but I'm the one implementing the changes you're seeing. I'd like to clarify a few things:
-* 1) TOR is not configured "globally". It does not break UDP scans. It is set up such that things like wget and Iceweasel use it out of the box but can easily be switched off (in the case of Iceweasel, just hit the TOR button!)
+via ex-developer **@kanedasan**:  
+* 1) Tor is not configured "globally". It does not break UDP scans. It is set up such that things like wget and Iceweasel use it out of the box but can easily be switched off (in the case of Iceweasel, just hit the TOR button!)
 * 2) The additional tools you will find are not ones that many people know about, hence why they were not included in Kali to begin with. Further, I have received permission to distribute any and all of this software (if it did not come with a clear, legal license)
 * 3) You can go and look at the build scripts: this is how the ISOs are built, feel free to build it yourself and compare the resultant contents
 * 4) As stated in the FAQ, my design goals are to reach pen-testers and security professionals who do not have the time, money, and/or patience to build such a thing, and use them to get feedback regarding further innovations to this product. The immediate intent is not to aid "hacktivists working within oppressive governmental regiemes," but if it does in fact help them, then that's OK too
@@ -238,9 +243,9 @@ Add-ons List
 * gem install ronin-web
 
 ###### Configuration:
-* Polipo -> TOR
-* wget -> Polipo
-* APT -> Polipo
+* polipo -> tor
+* wget -> polipo
+* apt -> polipo
 * sdmem (wipes memory at shutdown/reboot)
 
 -------------
@@ -290,7 +295,6 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 * Debian repositories
 * Add more tools!
 
-![Tor Connected](http://josh.myhugesite.com/static/images/attackvector-test.jpg)
 --------------
 ###### license
 > [![Creative Commons License](http://i.creativecommons.org/l/by/3.0/80x15.png)](http://creativecommons.org/licenses/by/3.0/)[![Open Source](http://www.ipol.im/static/badges/open-source.png)](http://www.gnu.org/licenses/gpl.html)[![Hacker Emblem](http://catb.org/hacker-emblem/hacker.png)](http://www.catb.org/hacker-emblem/)  
