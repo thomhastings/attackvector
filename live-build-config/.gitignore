@@ -9,6 +9,7 @@ chroot.packages.live
 .stage
 .lock
 .build/
+config/archives/config
 config/binary
 config/bootstrap
 config/common

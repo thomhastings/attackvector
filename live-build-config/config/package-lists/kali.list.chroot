@@ -143,6 +143,7 @@ tightvncserver
 tilda
 tmux
 tor
+deb.torproject.org-keyring
 #if ARCHITECTURES armel armhf
 tor-arm
 #endif
@@ -200,7 +201,6 @@ gnome-user-share
 gnome-brave-icon-theme
 gnome-shell-extensions
 gnome-orca
-gnome-share
 # *** For XP Theme *** Could not get this working, still have custom talika deb, win7 theme installer if anyone wants to have a shot at it
 #libc6-i386
 #ia32-libs
