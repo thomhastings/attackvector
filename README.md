@@ -34,9 +34,7 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them into o
 
 Download
 ========
-* mirror [BitBucket](https://bitbucket.org/attackvector/attackvector-linux/downloads)  
-* mirror [Act4Security.com](http://act4security.com/attack_vector_alpha_0.1.1b.iso)  
-* MD5 (attack_vector_alpha_0.1.1b.iso) = 99243d5f4132116e2e9606d6b0c98e6f
+* downloads are down for now, follow the build instructions.
 
 F.A.Q.
 ======
