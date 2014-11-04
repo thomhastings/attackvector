@@ -1,5 +1,5 @@
 [AttackVector Linux](http://attackvector.org): the dragon has tails
-
+☠龍☤☥cc:~[didymos](http://ejje.weblio.jp/content/65803+Didymos)∴
 =================================================================== 
 **AttackVector Linux** is a new distribution for anonymized security testing.  
 It is based on [custom](http://sf.net/p/customwheezy7) [Kali](http://kali.org) with ideas gleaned from [Tails](https://tails.boum.org) (both [Debian](http://debian.org) based), with tools not found in either.
@@ -34,7 +34,8 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them into o
 
 Download
 ========
-* downloads are down for now, follow the build instructions.
+* Recall you can always just follow the build instructions.
+* Download » [attack_vector_alpha_0.1.1b.iso](http://turing.slu.edu/~hastint/attack_vector_alpha_0.1.1b.iso)
 
 F.A.Q.
 ======
