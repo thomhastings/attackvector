@@ -1,10 +1,11 @@
-ДttaçkVǝctøLinux a.k.a. 'AVL'
-=============================
-©!#zǝяø88∴» ✪[TØMU](http://github.com/thomhastings)™ ✪$tiиgεя7® ~[didymos](http://ejje.weblio.jp/content/65803+Didymos) ::∆» skip to [Downloads](https://github.com/ksoona/attackvector/blob/master/README.md#download)
+Дtta¢k Vεcтøя Linux a.k.a. 'AVL'
+================================
+©#!zǝяø88∴» ✪[тØѪμ](http://github.com/thomhastings)™ ✪[5тiиgεя](http://ksoona.github.io)® ~[didym0s](http://ejje.weblio.jp/content/65803+Didymos) !∆∴» skip to: [Downloads](https://github.com/ksoona/attackvector/blob/master/README.md#download)
 
-「**AttackVector Linux**」 is a new distro for anonymized* (pen)testing & network security auditing.  
-The [Kali](http://kali.org) 'dragon'[龍](http://dragonkahn.deviantart.com/art/Sleek-and-Sporty-528791) now has [tails](http://tails.boum.org)!  
-It is based on a [custom](http://sf.net/p/customwheezy7)ized [Kali](http://kali.org) with ideas gleaned from [Tails](https://tails.boum.org) (both [Debian](http://debian.org) based), with additional tools not found in either.
+「**AttackVector Linux**」 is a new distribution for anonymized* penetration testing & security auditing.  
+The [Kali](http://kali.org) dragon ([龍](http://dragonkahn.deviantart.com/art/Sleek-and-Sporty-528791)) now has [tails](http://tails.boum.org), if you follow my [meta](https://www.spaceglasses.com)phor.  
+**AVL** is organized around a [custom](http://sf.net/p/customwheezy7)ized [Kali](http://kali.org) build, using design patterns from [Tails](https://tails.boum.org), as well as aethetics from [Parrot](http://parrotsec.org).  
+Allo of the above are based on [Debian](http://debian.org). Дtta¢k Vεcтøя also comes with additional tools not found in either sub-distro.
 
 -------------------------------------------------------------------
 
@@ -13,7 +14,7 @@ Design Philosophy
 **Yin** and _Yang_
 
 _AttackVector Linux_ (A.V.L.) is a [Kali](http://kali.org) [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) "recipe", which can be thought of as add-ons for Kali live-build.  
-The biggest add-on is [Tor](http://torproject.org) _installed_ by default. It is taken from [Tails](http://tails.boum.org)' [design](https://tails.boum.org/contribute/design/).  
+The biggest add-on is [Tor](http://torproject.org) _installed_ by default. It is taken from [Tails](http://tails.boum.org)' [design patterns](https://tails.boum.org/contribute/design/).  
 
 **Kali** vs. _Tails_
 
