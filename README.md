@@ -37,8 +37,9 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them compli
 
 Download
 ========
-* Recall you can always just follow the build instructions.
-* Download » [attack_vector_alpha_0.1.1b.iso](http://turing.slu.edu/~hastint/attack_vector_alpha_0.1.1b.iso)
+* Recall you can always just follow the [build instructions](https://github.com/ksoona/attackvector/blob/master/README.md#build-instructions).
+* Otherwise, Download Away! » [attack_vector_alpha_0.1.1b.iso](http://turing.slu.edu/~hastint/attack_vector_alpha_0.1.1b.iso)
+* If you can host a mirror, please do. Also torrents.
 
 F.A.Q.
 ======
