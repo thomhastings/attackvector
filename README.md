@@ -1,11 +1,11 @@
 Дtta¢k Vεcтøя Linux a.k.a. 'AVL'
 ================================
-©#!zǝяø88∴» ✪[тØѪμ](http://github.com/thomhastings)™ ✪[5тiиgεя](http://ksoona.github.io)® ~[didym0s](http://ejje.weblio.jp/content/65803+Didymos) !∆∴» skip to: [Downloads](https://github.com/ksoona/attackvector/blob/master/README.md#download)
+©#!zǝяø88∴» ✪[тØѪμ](http://github.com/thomhastings)™ ✪[5тiиgεя](http://ksoona.github.io)® —[didym0us](http://ejje.weblio.jp/content/65803+Didymos) #!∆∴»~ skip to: [Downloads](https://github.com/ksoona/attackvector/blob/master/README.md#download)
 
 「**AttackVector Linux**」 is a new distribution for anonymized* penetration testing & security auditing.  
-If you will, the "dragon" ([龍](http://dragonkahn.deviantart.com/art/Sleek-and-Sporty-528791)) now has "[tails](http://tails.boum.org)" —get it? Follow the extended [meta](https://www.spaceglasses.com)phor?  
+If you will, the "[dragon](http://www.n1tr0g3n.com/wp-content/uploads/2011/12/Green_dragon_by_archstroke.png)" {[龍](http://dragonkahn.deviantart.com/art/Sleek-and-Sporty-528791)} now has "[tails](http://tails.boum.org)" —get it? Follow the extended [meta](https://www.spaceglasses.com)phor? I know, it's lame.  
 **AVL** is organized around a [custom](http://sf.net/p/customwheezy7)ized [Kali](http://kali.org) build, using design patterns from [Tails](https://tails.boum.org), as well as aethetics from [Parrot](http://parrotsec.org).  
-Allo of the above are based on [Debian](http://debian.org). Дtta¢k Vεcтøя also comes with additional tools not found in either sub-distro.
+Allo of the above are based on [Debian](http://debian.org). Дtta¢k Vεcтøя also comes with additional tools not found in any sub-distro.
 
 -------------------------------------------------------------------
 
@@ -253,14 +253,14 @@ Add-ons List
 * apt -> polipo
 * sdmem (wipes memory at shutdown/reboot)
 
--------------
-###### $ocial
-> IRC **#AttackVector** on Freenode  
-> [![[Tweet This](http://www.rap-up.com/blog/wp-content/plugins/tweet-this/icons/tt-twitter-micro4.png)](https://twitter.com/intent/tweet?text=%40attackvector)[![Facebook](http://richardxthripp.thripp.com/files/plugins/tweet-this/icons/tt-facebook-micro4.png)](http://facebook.com/attackVector)[![Linkedin](http://www.hollybrady.com/bradyholly/wp-content/plugins/tweet-this/icons/en/linkedin/tt-linkedin-micro4.png)](http://linkedin.com/in/attackVector)  
+------------------
+###### Social ಠ_ರೃ
+> Internet Relay Chat (IRC) -> **#AttackVector** on Freenode  
+> [![Follow Me](http://i267.photobucket.com/albums/ii311/Vap0r_InThe_Wind/Animated%20Pictures/twitter.png)](https://twitter.com/intent/tweet?text=%40attackvector)[![Facebook](http://richardxthripp.thripp.com/files/plugins/tweet-this/icons/tt-facebook-micro4.png)](http://facebook.com/attackVector)[![Linkedin](http://www.hollybrady.com/bradyholly/wp-content/plugins/tweet-this/icons/en/linkedin/tt-linkedin-micro4.png)](http://linkedin.com/in/attackVector)  
 > ![Web Mockup](https://sourceforge.net/p/attackvector/screenshot/attackvector_header.jpg)  
 > (Web Mockup)
 
-##### Read all of the documentation:
+##### RTFM
 * [Live Build Manual](http://live.debian.net/manual/3.x/html/live-manual/index.en.html)
 * [TAILS git branches](https://tails.boum.org/contribute/git/#index4h3)
 * How to [build TAILS](https://tails.boum.org/contribute/build/#index1h1)
@@ -270,8 +270,8 @@ Add-ons List
 * [Live Build a Custom Kali ISO](http://docs.kali.org/live-build/live-build-a-custom-kali-iso)
 * How to [customize Debian live](http://live.debian.net/manual/current/html/live-manual/customizing-contents.en.html)
 
-Project Status:
-===============
+Project Status
+==============
 * Build => Success
 * Download => Live
 * Domain/Hosting ?
@@ -284,24 +284,25 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 * [TAILS git repositories](https://tails.boum.org/contribute/git/#index3h1)
 * Todo: Configure build system to generate & test ISOs ([GitLab](https://gitlab.com) CI)
 
-##### Tasks
+##### Tasks // To-Do // Unassigned
 * [Help port TAILS to Wheezy](https://tails.boum.org/todo/Wheezy/)
 * Evaluate features of each distro & unify them into a single kernel
 * Provide two layers of functionality: [desktop](http://www.dorkfolio.net/kernel-repository) install and [live](http://www.irongeek.com/i.php?page=videos/portable-boot-devices-usb-cd-dvd)
 * Evaluate features of each distro & unify them into a single kernel
-* Add warning messages for anonymity risks
-* Full Disk Encryption (FDE) w/ [LUKS](https://code.google.com/p/cryptsetup/)
-+ on flash storage jump drive for Live Linux
-+ on dedicated install with [wordlists galore](https://github.com/thomhastings/bt5-scripts/blob/master/get-wordlists.sh)
-* Host on [AttackVector.org](http://attackvector.org)
-* Provide documentation
+* **Add warning messages for anonymity risks**
+* Full Disk Encryption (FDE) w/ [LUKS](https://code.google.com/p/cryptsetup/): Thank you [Kali](http://www.kali.org/tag/luks/)!
++ Live version on flash storage jump drive for Live Linux on-the-go
++ Full version on dedicated install with [wordlists galore](https://github.com/thomhastings/bt5-scripts#get-wordlistssh)
+* Host on [AttackVector.org](http://attackvector.org) (?)
+* Provide documentation!
 * [HTTPS Everywhere](https://www.eff.org/https-everywhere)
-* Debian repositories
-* Continue to integrate high quality tools
-* Clone the Kali repos so that AttackVector can stand-alone
+* Debian repositories (?)
+* Continue to integrate high quality [tools](https://github.com/thomhastings/bt5-scripts#get-scriptssh)
+* cron Clone the Kali&Tails git repos so that AttackVector can stand-alone
 + Change live build to run off this new mirror
-* Debian repositories
+* Debian repositories!
 * Add more tools!
+* Automate!
 
 --------------
 ###### license
