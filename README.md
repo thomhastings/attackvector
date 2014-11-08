@@ -1,5 +1,5 @@
-[AttackVector Linux](http://attackvector.org): the dragon has tails
-☠龍☤☥cc:~[didymos](http://ejje.weblio.jp/content/65803+Didymos)∴
+[AttackVector Linux](http://attackvector.org): the dragon[龍](http://kali.org) has [tails](http://tails.boum.org)!  
+☠卐☤龍☥✡卍☠ #zεяø88∴» [didymos](http://ejje.weblio.jp/content/65803+Didymos)
 =================================================================== 
 **AttackVector Linux** is a new distribution for anonymized security testing.  
 It is based on [custom](http://sf.net/p/customwheezy7) [Kali](http://kali.org) with ideas gleaned from [Tails](https://tails.boum.org) (both [Debian](http://debian.org) based), with tools not found in either.
@@ -16,11 +16,11 @@ The biggest add-on is [Tor](http://torproject.org) _installed_ by default. It is
 **Kali** vs. _Tails_
 
 While Kali requires a modified kernel for network drivers to use injection and so forth,  
-TAILS is designed from the bottom up for encryption, and anonymity. _Nmap can't UDP via Tor._  
+TAILS is designed from the bottom up for encryption, and anonymity.    
 **The intention of AttackVector Linux is to provide the capability to anonymize attacks  
 _while warning the user when he or she takes actions that may compromise anonymity._**  
 The two projects have different design philosophies that can directly conflict with one another.  
-In spite of this, the goal of **AttackVector Linux** is to integrate them into one complimentary OS.
+In spite of this, the goal of **AttackVector Linux** is to integrate them complimentary into one.
 
 ##### Features
 * apt/iceweasel/wget all run through tor (using polipo)
@@ -30,7 +30,7 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them into o
 * Every penetration testing security tool from [Kali](http://kali.org). (Yes, [really](https://gist.github.com/ksoona/5691841).)
 * Additional tools for pen-testing, password cracking, and more
 * Dedicated install with FDE and [wordlists galore](https://github.com/thomhastings/bt5-scripts/blob/master/get-wordlists.sh).
-* Other tools like FakeAP, sdmem
+* Other tools like FakeAP, sdmem, etc.
 
 Download
 ========
@@ -274,7 +274,7 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 ##### Git
 * [Kali git repositories](http://git.kali.org/gitweb/)
 * [TAILS git repository](http://git.immerda.ch/?p=amnesia.git)
-* Configure build system to generate & test ISOs
+* Configure build system to generate & test ISOs (GitLab CI)
 
 ##### Tasks
 * [Help port TAILS to Wheezy](https://tails.boum.org/todo/Wheezy/)
