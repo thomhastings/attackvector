@@ -283,7 +283,10 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 ##### Git Repos (Operation Dovetail)
 * [Kali git repositories](http://git.kali.org/gitweb/)
 * [TAILS git repositories](https://tails.boum.org/contribute/git/#index3h1)
-* Todo: Configure build system to generate & test ISOs ([GitLab](https://gitlab.com) CI)
+* Todo: Configure build system to generate & test ISOs ([GitLab](https://gitlab.org)-CI)
+* [GitLab.org](http://gitlab.org) for hosting repos cron pull'd from the above (see **base-git-subtree.sh**)
+* [GitLab-CI](https://github.com/gitlabhq/gitlab-ci#gitlab-ci-is-an-open-source-continuous-integration-server) Continuous Intergration system uses [Vagrant](http://vagrantup.com), just like [TAILS build](https://tails.boum.org/contribute/build/#index1h1) scripts
+* Configure build system to generate & test ISOs (CI)
 
 ##### Tasks // To-Do // Unassigned
 * [Help port TAILS to Wheezy](https://tails.boum.org/todo/Wheezy/)
