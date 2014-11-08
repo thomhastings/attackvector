@@ -96,8 +96,8 @@ lb build
 ```
 
 #### Issue Tracker:
-Please submit all requests for bugfixes and features for our next release cycle to [JIRA](https://bitbucket.org/attackvector/attackvector-linux/issues/new).  
-We release under an "early, often" philosophy.
+Please submit all requests for bugfixes and features for our next release cycle to [GitHub Issues](https://github.com/ksoona/attackvector/issues).  
+We release under an "early, sometimes" philosophy. That whole "early, often" thing didn't work out.  
 
 ##### Target use case(s):
 * Research labs targeting malware servers such as command and control servers.
@@ -106,13 +106,13 @@ We release under an "early, often" philosophy.
 * Academics and students working on experimental projects.
 * Intelligence agencies seeking plausible deniability.
 
-When I was asking my mentor, a computer security professor, about the ethically grey implications of the project, she replied, "You can always just call it an academic exercise."
+When I was asking my mentor, a computer security professor who had interned briefly at the CIA, about the ethically gray implications of the project, she replied, `You can always just call it an academic exercise.`
 
 Further Q&A ([/r/netsec](http://redd.it/1fcrjh))
 ========================
 Q: How is this different from BackBox?
 
-* 1.) You're right, on the surface, no difference, all this FOSS was available elsewhere (different packages and repositories). However, I'd argue:
+* 1.) You're right, on the surface, no difference, all this FOSS was available elsewhere (different packages and repositories). However, I (@kensoona) would argue:
 * 2.) No one had stiched the pieces together in this particular way. I'd argue that Tails features and [design goals like these](https://tails.boum.org/doc/about/features/index.en.html#index3h2) are noble ones for a Kali fork.
 * 3.) Kali's [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) is designed for uses like this. Think of it as a post-install script that runs as you generate the ISO instead, so it's sorta like a pre-install? IDK
 
@@ -121,7 +121,7 @@ via ex-developer **@kanedasan**:
 * 2) The additional tools you will find are not ones that many people know about, hence why they were not included in Kali to begin with. Further, I have received permission to distribute any and all of this software (if it did not come with a clear, legal license)
 * 3) You can go and look at the build scripts: this is how the ISOs are built, feel free to build it yourself and compare the resultant contents
 * 4) As stated in the FAQ, my design goals are to reach pen-testers and security professionals who do not have the time, money, and/or patience to build such a thing, and use them to get feedback regarding further innovations to this product. The immediate intent is not to aid "hacktivists working within oppressive governmental regiemes," but if it does in fact help them, then that's OK too
-* 5) This is in **ALPHA STAGE**: for any and all requests please see our [JIRA](https://bitbucket.org/attackvector/attackvector-linux/issues/new)
+* 5) This is still in **ΛLPHΛ STΛGE**, for bugfixes and feature requests please hassle [AAG](https://github.com/AAG-SATIEDN/attackvector), not me.
 
 Quotes
 ======
@@ -253,13 +253,13 @@ Add-ons List
 * sdmem (wipes memory at shutdown/reboot)
 
 -------------
-###### social
+###### $ocial
 > IRC **#AttackVector** on Freenode  
-> [![Tweet This](http://ampedstatus.org/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png)](https://twitter.com/intent/tweet?text=%40attackvector)[![Facebook](http://richardxthripp.thripp.com/files/plugins/tweet-this/icons/tt-facebook-micro4.png)](http://facebook.com/attackVector)[![Linkedin](http://www.hollybrady.com/bradyholly/wp-content/plugins/tweet-this/icons/en/linkedin/tt-linkedin-micro4.png)](http://linkedin.com/in/attackVector)  
+> [![[Tweet This](http://www.rap-up.com/blog/wp-content/plugins/tweet-this/icons/tt-twitter-micro4.png)](https://twitter.com/intent/tweet?text=%40attackvector)[![Facebook](http://richardxthripp.thripp.com/files/plugins/tweet-this/icons/tt-facebook-micro4.png)](http://facebook.com/attackVector)[![Linkedin](http://www.hollybrady.com/bradyholly/wp-content/plugins/tweet-this/icons/en/linkedin/tt-linkedin-micro4.png)](http://linkedin.com/in/attackVector)  
 > ![Web Mockup](https://sourceforge.net/p/attackvector/screenshot/attackvector_header.jpg)  
 > (Web Mockup)
 
-##### Docs
+##### Read all of the documentation:
 * [Live Build Manual](http://live.debian.net/manual/3.x/html/live-manual/index.en.html)
 * [TAILS git branches](https://tails.boum.org/contribute/git/#index4h3)
 * How to [build TAILS](https://tails.boum.org/contribute/build/#index1h1)
@@ -269,16 +269,19 @@ Add-ons List
 * [Live Build a Custom Kali ISO](http://docs.kali.org/live-build/live-build-a-custom-kali-iso)
 * How to [customize Debian live](http://live.debian.net/manual/current/html/live-manual/customizing-contents.en.html)
 
-Project Status
-==============
+Project Status:
+===============
+* Build => Success
+* Download => Live
+* Domain/Hosting ?
 ![UML Diagram](https://sourceforge.net/p/attackvector/screenshot/attackvector-uml-diagram2.png)
 It seems our best structural approach is customizing the [Kali Live Build scripts](http://docs.kali.org/live-build/live-build-a-custom-kali-iso).  
 Eventually this Kali derivative should meet the [TAILS design specifications](https://tails.boum.org/contribute/design/#index13h2).
 
-##### Git
+##### Git Repos (Operation Dovetail)
 * [Kali git repositories](http://git.kali.org/gitweb/)
-* [TAILS git repository](http://git.immerda.ch/?p=amnesia.git)
-* Configure build system to generate & test ISOs (GitLab CI)
+* [TAILS git repositories](https://tails.boum.org/contribute/git/#index3h1)
+* Todo: Configure build system to generate & test ISOs ([GitLab](https://gitlab.com) CI)
 
 ##### Tasks
 * [Help port TAILS to Wheezy](https://tails.boum.org/todo/Wheezy/)
@@ -303,8 +306,9 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 ###### license
 > [![PRISM-break.org](https://f.cloud.github.com/assets/490579/1184157/1a8794f0-2240-11e3-9809-3db8577d9594.png)](http://prism-break.org)[![Creative Commons License](http://i.creativecommons.org/l/by/3.0/80x15.png)](http://creativecommons.org/licenses/by/3.0/)[![Open Source](http://www.ipol.im/static/badges/open-source.png)](http://www.gnu.org/licenses/gpl.html)[![Hacker Emblem](http://catb.org/hacker-emblem/hacker.png)](http://www.catb.org/hacker-emblem/)  
 > Text under [Creative Commons License](http://creativecommons.org/licenses/by-nc-sa/3.0/).  
-> Code under [GNU Public License](http://www.gnu.org/licenses/gpl.html).
+> Code under [GNU Public License](http://www.gnu.org/licenses/gpl.html).  
 > ✮☠卍☤✡☥♔卐☠✮
+> ============
 > я0ʇɔǝΛʞɔɐʇʇ∀
 > ============
 
