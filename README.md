@@ -18,7 +18,7 @@ The biggest add-on is [Tor](http://torproject.org) _installed_ by default. It is
 **Kali** vs. _Tails_
 
 While Kali requires a modified kernel for network drivers to use injection and so forth,  
-TAILS is designed from the bottom up for encryption, and anonymity. These can dovetail.
+TAILS is designed from the bottom up for encryption, and anonymity. These can dovetail.  
 **The intention of AttackVector Linux is to provide the capability to anonymize attacks  
 _while warning the user when he or she takes actions that may compromise anonymity._**  
 The two projects have different design philosophies that can directly conflict with one another.  
