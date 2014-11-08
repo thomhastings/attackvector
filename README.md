@@ -1,4 +1,4 @@
-я0ʇɔǝΛʞɔɐʇʇ∀Linux a.k.a. 'AVL'
+ДttaçkVǝctøLinux a.k.a. 'AVL'
 =============================
 ©!#zǝяø88∴» ✪[TØMU](http://github.com/thomhastings)™ ✪$tiиgεя7® ~[didymos](http://ejje.weblio.jp/content/65803+Didymos) ::∆» skip to [Downloads](https://github.com/ksoona/attackvector/blob/master/README.md#download)
 
@@ -303,6 +303,7 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 > Text under [Creative Commons License](http://creativecommons.org/licenses/by-nc-sa/3.0/).  
 > Code under [GNU Public License](http://www.gnu.org/licenses/gpl.html).
 > ✮☠卍☤✡☥♔卐☠✮
+> я0ʇɔǝΛʞɔɐʇʇ∀
 > ============
 
 *not affiliated with "Anonymous"
