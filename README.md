@@ -29,11 +29,11 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them compli
 * apt/iceweasel/wget all run through tor (using polipo)
 * Iceweasel includes cookie monster, HTTPSeverywhere, TORbutton, and other great extensions
 * Incredible password recovery tools: [hashkill](http://www.gat3way.eu/hashkill) OCLHashcat, many more!
-* Great Ruby tools like [Ronin](https://github.com/ronin-ruby/)
+* Great Ruby tools like [Ronin](https://github.com/ronin-ruby/) and... Bronin?
 * Every penetration testing security tool from [Kali](http://kali.org). (Yes, [really](https://gist.github.com/ksoona/5691841).)
-* Additional tools for pen-testing, password cracking, and more
-* Dedicated install with FDE and [wordlists galore](https://github.com/thomhastings/bt5-scripts/blob/master/get-wordlists.sh).
-* Other tools like FakeAP, sdmem, etc.
+* Additional tools for pen-testing, password cracking, and more!
+* Dedicated install with FDE and [wordlists galore](https://github.com/thomhastings/bt5-scripts#get-wordlistssh).
+* Other tools like [PwnSTAR](https://github.com/SilverFoxx/PwnSTAR), FakeAP, sdmem, [mimikatz-en](https://github.com/thomhastings/mimikatz-en), [cortana](https://github.com/rsmudge/cortana-scripts)
 
 Download
 ========
@@ -53,22 +53,22 @@ _A: One of the design goals is anonymity, which security professionals require o
 _A: Yes, to disable Tor globally simple exit Vidalia, then run the command "/etc/init.d/polipo stop", and finally comment out the config in "/etc/apt/apt.conf.d/0000runtime-proxy" and "/etc/wgetrc". FYI, TOR does not affect anything that is not intentionally proxied through Polipo, meaning that it will not interfere with NMAP, etc._
 
 **Q: Is this only GNOME 3, or can I switch to MATE/KDE/alternate?**  
-_Kaneda: Right now I'm building for GNOME 3 specifically, but I will come out with a KDE version due to popular demand. Feel free to give your input regarding alternate window managers and I'll see what I can do._
-_Thom_: I like compiz, tiling window managers, and buuf icon theme.
-Here's a brainstorm:
+_Kaneda: Right now I'm building for GNOME 3 specifically, but I will come out with a KDE version due to popular demand. Feel free to give your input regarding alternate window managers and I'll see what I can do._  
+_Thom_: I like compiz, screen, tiling windows, drop-down terminal emulators from hotkeys (like Tilda, Guake, or Yakuake) and the Buuf icon theme.
+Here's a quick UI brainstorm...
 [razor-qt](http://razor-qt.org)
 [compiz](http://compiz.org)
 [qtile](http://qtile.org)
 [openbox](http://openbox.org)
 [fluxbox](http://fluxbox.org)
 [ion](http://tuomov.iki.fi/software)
-I also love the Buuf icon theme:
+I **love** the Buuf icon theme:
 [buuf](http://buuficontheme.free.fr)
-Also obviously MATE, XFCE, LXDE, etc.
+Also obviously we could use MATE, XFCE, or LXDE, etc.
   
 **Q: One of your design goals is a Windows XP theme? (camouflage)**  
-_Kaneda: This is one that's up for debate, but given Thom's insistence that we include it I will get around to it at some point in the near future._
-_Thom_: Here's the link from Tails' design: [Windows Camouflage](https://tails.boum.org/doc/first_steps/startup_options/windows_camouflage/index.en.html), also: [phillips321 did it on BT5](http://www.phillips321.co.uk/2012/08/28/making-backtrack5-look-like-xp/).
+_Kaneda: This is one that's up for debate, but given @thomhastings' insistence that we include it I will get around to it at some point in the near future._
+_Thom_: Here's the link from Tails' design: [Windows Camouflage](https://tails.boum.org/doc/first_steps/startup_options/windows_camouflage/index.en.html), also: [phillips321 did it on BT5](http://www.phillips321.co.uk/2012/08/28/making-backtrack5-look-like-xp/). I think it's totally useful to avoid suspicion from shoulder-surfers and nosy nancies.
   
 **Q: Aren't kiddies going to use this tool to... ChaOS?!**  
 _A: Probably. I'm not a lawyer. Here is an official-ish blurb: Customarily, I (@KenSoona) am not responsible for any malicious use of this tool, and I hope that releasing it and its source code engenders better information security for the community at large._
@@ -103,19 +103,19 @@ We release under an "early, sometimes" philosophy. That whole "early, often" thi
 ##### Target use case(s):
 * Research labs targeting malware servers such as command and control servers.
 * Legitimate penetration testing consulting companies needing to do black-box testing.
-* `hacktivists` working within oppressive governmental regiemes.
-* Academics and students working on experimental projects.
-* Intelligence agencies seeking plausible deniability.
+* `"Hacktivists"` living within oppressive governmental regiemes bent on censorship.
+* Academics and students working on experimental or other educational research projects.
+* Anyone at all seeking plausible deniability, personal privacy, freedom or anonymity.
 
-When I was asking my mentor, a computer security professor who had interned briefly at the CIA, about the ethically gray implications of the project, she replied, `You can always just call it an academic exercise.`
+When I was asking my mentor, a computer security professor who had interned briefly at the CIA, about the ethically gray implications of the project, she replied, `"You can always just call it an academic exercise."`
 
 Further Q&A ([/r/netsec](http://redd.it/1fcrjh))
 ========================
-Q: How is this different from BackBox?
+Q: How is this different from BackBox/[ADHD](http://sf.net/p/adhd/)/ArchAssault?
 
-* 1.) You're right, on the surface, no difference, all this FOSS was available elsewhere (different packages and repositories). However, I (@kensoona) would argue:
+* 1.) All this FOSS was available elsewhere (different packages and repositories). However, I (@kensoona) would argue:
 * 2.) No one had stiched the pieces together in this particular way. I'd argue that Tails features and [design goals like these](https://tails.boum.org/doc/about/features/index.en.html#index3h2) are noble ones for a Kali fork.
-* 3.) Kali's [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) is designed for uses like this. Think of it as a post-install script that runs as you generate the ISO instead, so it's sorta like a pre-install? IDK
+* 3.) Kali's [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) is designed for uses like this. Think of it as a post-install script that runs as you generate the ISO instead, so it's sorta like a pre-install as opposed to something like [remastersys](http://www.remastersys.com/)/[system-imager](http://system-imaging.blogspot.com/).
 
 via ex-developer **@kanedasan**:  
 * 1) Tor is not configured "globally". It does not break UDP scans. It is set up such that things like wget and Iceweasel use it out of the box but can easily be switched off (in the case of Iceweasel, just hit the TOR button!)
@@ -255,7 +255,7 @@ Add-ons List
 
 ------------------
 ###### Social ಠ_ರೃ
-> Internet Relay Chat (IRC) -> **#AttackVector** on Freenode  
+> Internet Relay Chat (IRC) -> **#attackVector** on Freenode  
 > [![Follow Me](http://i267.photobucket.com/albums/ii311/Vap0r_InThe_Wind/Animated%20Pictures/twitter.png)](https://twitter.com/intent/tweet?text=%40attackvector)[![Facebook](http://richardxthripp.thripp.com/files/plugins/tweet-this/icons/tt-facebook-micro4.png)](http://facebook.com/attackVector)[![Linkedin](http://www.hollybrady.com/bradyholly/wp-content/plugins/tweet-this/icons/en/linkedin/tt-linkedin-micro4.png)](http://linkedin.com/in/attackVector)  
 > ![Web Mockup](https://sourceforge.net/p/attackvector/screenshot/attackvector_header.jpg)  
 > (Web Mockup)
@@ -300,8 +300,9 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 * Continue to integrate high quality [tools](https://github.com/thomhastings/bt5-scripts#get-scriptssh)
 * cron Clone the Kali&Tails git repos so that AttackVector can stand-alone
 + Change live build to run off this new mirror
++ Torrent tracker? just for downloads...
 * Debian repositories!
-* Add more tools!
+* Add [more](https://www.trustedsec.com/downloads) [tools](https://github.com/trustedsec)!
 * Automate!
 
 --------------
@@ -314,4 +315,4 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 > я0ʇɔǝΛʞɔɐʇʇ∀
 > ============
 
-*not affiliated with "Anonymous"
+*not affiliated with "Anonymous" "4chan" "LulzSec" etc.
