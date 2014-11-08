@@ -1,9 +1,9 @@
 я0ʇɔǝΛʞɔɐʇʇ∀Linux a.k.a. 'AVL'
 =============================
-©!#zǝяø88∴»✪TØMU™✪龍$tiиgεя7®~[didymos](http://ejje.weblio.jp/content/65803+Didymos) :: skip to [Downloads](https://github.com/ksoona/attackvector/blob/master/README.md#download)
+©!#zǝяø88∴» ✪[TØMU](http://github.com/thomhastings)™ ✪$tiиgεя7® ~[didymos](http://ejje.weblio.jp/content/65803+Didymos) ::∆» skip to [Downloads](https://github.com/ksoona/attackvector/blob/master/README.md#download)
 
-「**AttackVector Linux**」 is a new distribution for anonymized security testing: the dragon[龍](http://kali.org) has [tails](http://tails.boum.org)!    
-It is based on [custom](http://sf.net/p/customwheezy7) [Kali](http://kali.org) with ideas gleaned from [Tails](https://tails.boum.org) (both [Debian](http://debian.org) based), with tools not found in either.
+「**AttackVector Linux**」 is a distro for anonymized* security {pen}testing. The dragon:[龍](http://kali.org) has [tails](http://tails.boum.org).    
+It is based on [custom](http://sf.net/p/customwheezy7) [Kali](http://kali.org) with ideas gleaned from [Tails](https://tails.boum.org) (both [Debian](http://debian.org) based), with additional tools not found in either.
 
 -------------------------------------------------------------------
 
@@ -300,6 +300,6 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 ###### license
 > [![PRISM-break.org](https://f.cloud.github.com/assets/490579/1184157/1a8794f0-2240-11e3-9809-3db8577d9594.png)](http://prism-break.org)[![Creative Commons License](http://i.creativecommons.org/l/by/3.0/80x15.png)](http://creativecommons.org/licenses/by/3.0/)[![Open Source](http://www.ipol.im/static/badges/open-source.png)](http://www.gnu.org/licenses/gpl.html)[![Hacker Emblem](http://catb.org/hacker-emblem/hacker.png)](http://www.catb.org/hacker-emblem/)  
 > Text under [Creative Commons License](http://creativecommons.org/licenses/by-nc-sa/3.0/).  
-> Code under [GNU Public License](http://www.gnu.org/licenses/gpl.html).  
+> Code under [GNU Public License](http://www.gnu.org/licenses/gpl.html).
 > ✮☠卍☤✡☥♔卐☠✮
 > ============
