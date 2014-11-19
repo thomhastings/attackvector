@@ -317,6 +317,6 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 
 яøʇɔǝΛʞɔɐʇʇ∀AttackVectØR
 ========================
-via UNiCØD∄SP♠DE  
+via ÜNiCØD∄SP♠DE  
 
 *not affiliated with "Anonymous" "4chan" "LulzSec" etc.
