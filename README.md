@@ -5,7 +5,7 @@
 「**AttackVector Linux**」 is a new distribution for anonymized* penetration testing & security auditing.  
 If you will, the "[dragon](http://www.n1tr0g3n.com/wp-content/uploads/2011/12/Green_dragon_by_archstroke.png)" {[龍](http://dragonkahn.deviantart.com/art/Sleek-and-Sporty-528791)} now has "[tails](http://tails.boum.org)" —get [it](http://5tinger.deviantart.com/art/Sleek-and-Sporty-2-60881670)? Follow the extended [meta](https://www.spaceglasses.com)phor? I know, it's lame.  
 **AVL** is organized around a [custom](http://sf.net/p/customwheezy7)ized [Kali](http://kali.org) build, using design patterns from [Tails](https://tails.boum.org), as well as aethetics from [Parrot](http://parrotsec.org).  
-All of the above are based on [Debian](http://debian.org). Дtta¢k Vεcтøя also comes with additional tools not found in any sub-distro.
+All of the above are based on [Debian](http://debian.org). Дtta¢k Vεcтøя also comes with additional tools not found in these prior art sub-distros.
 
 -------------------------------------------------------------------
 
