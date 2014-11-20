@@ -40,7 +40,7 @@ Download
 * Recall you can always just follow the [build instructions](https://github.com/ksoona/attackvector/blob/master/README.md#build-instructions).
 * Otherwise, Download Away! » [attack_vector_alpha_0.1.1b.iso](http://turing.slu.edu/~hastint/attack_vector_alpha_0.1.1b.iso)
 * If you can host a mirror, please do. Also put up torrents. Yes.
-* [atwerkVector.org](http://turing.slu.edu/~hastint/AttackVector.htm)???????
+* [atwerkVector.org](http://turing.slu.edu/~hastint/AttackVector.htm)?
 
 F.A.Q.
 ======
