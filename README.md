@@ -34,7 +34,7 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them compli
 * Great Ruby tools like [Ronin](https://github.com/ronin-ruby/) ...and [Bro](https://www.bro.org)[nin](http://rwnin.blogspot.com)?
 * Every penetration testing security tool from [Kali](http://kali.org). (Yes, [really](https://gist.github.com/ksoona/5691841).)
 * Additional tools for pen-testing, password cracking, and more!
-* Dedicated install with FDE and [wordlists galore](https://github.com/thomhastings/bt5-scripts#get-wordlistssh).
+* Dedicated install with FDE and [wordlists](http://turing.slu.edu/~hastint/avl/3804453f6297/) [galore](https://github.com/thomhastings/bt5-scripts#get-wordlistssh).
 * Other tools like [PwnSTAR](https://github.com/SilverFoxx/PwnSTAR), FakeAP, sdmem, [mimikatz-en](https://github.com/thomhastings/mimikatz-en), [cortana](https://github.com/rsmudge/cortana-scripts)
 
 Download
