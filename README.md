@@ -32,6 +32,7 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them compli
 * Iceweasel includes cookie monster, [HTTPS Everywhere](https://www.eff.org/https-everywhere), TORbutton, and other great extensions
 * Incredible password recovery tools: [hashkill](http://www.gat3way.eu/hashkill) OCLHashcat, many more!
 * Great Ruby tools like [Ronin](https://github.com/ronin-ruby/) ...and [Bro](https://www.bro.org)[nin](http://rwnin.blogspot.com)?
+* ![Pwnin](http://turing.slu.edu/~hastint/images/ronin2a.jpg)
 * Every penetration testing security tool from [Kali](http://kali.org). (Yes, [really](https://gist.github.com/ksoona/5691841).)
 * Additional tools for pen-testing, password cracking, and more!
 * Dedicated install with FDE and [wordlists galore](https://github.com/thomhastings/bt5-scripts#get-wordlistssh).
