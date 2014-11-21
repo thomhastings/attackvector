@@ -1,6 +1,8 @@
+![Dagron](https://raw.githubusercontent.com/ksoona/attackvector/master/gfx/green_dragon.png)
+
 Дtta¢k Vεcтøя Linux a.k.a. 'AVL'
 ================================
-©#!zǝяø88∴» ✪[tØѪμ](http://github.com/thomhastings)™ ✪[5тiиgεя](http://ksoona.github.io)® —[didym0us](http://ejje.weblio.jp/content/65803+Didymos)☻ #!∆∴»~ skip to: [Downloads](https://github.com/ksoona/attackvector/blob/master/README.md#download)
+©#!zǝяø88∴» ✪[TØѪμ](http://github.com/thomhastings)™ ✪[5тiиgεя](http://ksoona.github.io)® —[didym0us](http://ejje.weblio.jp/content/65803+Didymos)☻ #!∆∴»~ skip to: [Downloads](https://github.com/ksoona/attackvector/blob/master/README.md#download)
 
 「**AttackVector Linux**」 is a new distribution for anonymized* penetration testing & security auditing.  
 If you will, the "[dargon](http://www.n1tr0g3n.com/wp-content/uploads/2011/12/Green_dragon_by_archstroke.png)" {[龍](http://dragonkahn.deviantart.com/art/Sleek-and-Sporty-528791)} now has "[tails](http://tails.boum.org)" —get [it](http://5tinger.deviantart.com/art/Sleek-and-Sporty-2-60881670)? Follow the extended [meta](https://www.spaceglasses.com)phor? I know, it's lame.  
@@ -30,6 +32,7 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them compli
 * Iceweasel includes cookie monster, [HTTPS Everywhere](https://www.eff.org/https-everywhere), TORbutton, and other great extensions
 * Incredible password recovery tools: [hashkill](http://www.gat3way.eu/hashkill) OCLHashcat, many more!
 * Great Ruby tools like [Ronin](https://github.com/ronin-ruby/) ...and [Bro](https://www.bro.org)[nin](http://rwnin.blogspot.com)?
+* ![Pwnin](http://turing.slu.edu/~hastint/images/ronin2a.jpg)
 * Every penetration testing security tool from [Kali](http://kali.org). (Yes, [really](https://gist.github.com/ksoona/5691841).)
 * Additional tools for pen-testing, password cracking, and more!
 * Dedicated install with FDE and [wordlists galore](https://github.com/thomhastings/bt5-scripts#get-wordlistssh).
