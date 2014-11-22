@@ -29,7 +29,7 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them compli
 
 ##### Features
 * apt/iceweasel/wget all run through tor (using polipo)
-* Iceweasel includes cookie monster, [HTTPS Everywhere](https://www.eff.org/https-everywhere), TORbutton, and other great extensions
+* Iceweasel includes cookie monster, [HTTPSeverywhere](https://www.eff.org/https-everywhere), TORbutton, and other great extensions
 * Incredible password recovery tools: [hashkill](http://www.gat3way.eu/hashkill) OCLHashcat, many more!
 * Great Ruby tools like [Ronin](https://github.com/ronin-ruby/) ...and [Bro](https://www.bro.org)[nin](http://rwnin.blogspot.com)?
 * Every penetration testing security tool from [Kali](http://kali.org). (Yes, [really](https://gist.github.com/ksoona/5691841).)
@@ -303,20 +303,20 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 * Host on [AttackVector.org](http://attackvector.org) (?)
 * Provide documentation!
 * Debian repositories (?)
-* Continue to integrate high [quality](http://www.fuzzysecurity.com/coding.html) [tools](https://github.com/thomhastings/bt5-scripts#get-scriptssh)
+* Continue to integrate [high](http://vicenteaguileradiaz.com/tools) [quality](http://www.fuzzysecurity.com/coding.html) [tools](https://github.com/thomhastings/bt5-scripts#get-scriptssh)
 * cron Clone the Kali&Tails git repos so that AttackVector can stand-alone
 + Change live build to run off this/these new mirror(s)
 + Torrent tracker? just for downloads...
 * Debian repositories! via git-pkg
 * Add [more](https://www.trustedsec.com/downloads) [tools](https://github.com/trustedsec)!
-* Automate!
+* Build -> Automate -> Rinse -> Repeat
 
 --------------
 ###### license
 > [![PRISM-break.org](https://f.cloud.github.com/assets/490579/1184157/1a8794f0-2240-11e3-9809-3db8577d9594.png)](http://prism-break.org)[![Creative Commons License](http://i.creativecommons.org/l/by/3.0/80x15.png)](http://creativecommons.org/licenses/by/3.0/)[![Open Source](http://www.ipol.im/static/badges/open-source.png)](http://www.gnu.org/licenses/gpl.html)[![Hacker Emblem](http://catb.org/hacker-emblem/hacker.png)](http://www.catb.org/hacker-emblem/)  
 > Text under [Creative Commons License](http://creativecommons.org/licenses/by-nc-sa/3.0/).  
 > Code under [GNU Public License](http://www.gnu.org/licenses/gpl.html).  
-> ✮☠卍☤✡☥♔卐☠✮  
+> ✮☠卍☤✡☥[♔](https://en.wikipedia.org/wiki/Kingmaker)卐☠✮  
 
 яøʇɔǝΛʞɔɐʇʇ∀AttackVectØR
 ========================
