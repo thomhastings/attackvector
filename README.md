@@ -278,7 +278,7 @@ Add-ons List
 Project Status
 ==============
 * Build => Success
-* Download => Live
+* Download => DOWN
 * Domain/Hosting ?
 ![UML Diagram](https://sourceforge.net/p/attackvector/screenshot/attackvector-uml-diagram2.png)
 It seems our best structural approach is customizing the [Kali Live Build scripts](http://docs.kali.org/live-build/live-build-a-custom-kali-iso).  
