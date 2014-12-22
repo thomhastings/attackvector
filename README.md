@@ -41,9 +41,10 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them compli
 Download
 ========
 * Recall you can always just follow the [build instructions](https://github.com/ksoona/attackvector/blob/master/README.md#build-instructions).
-* Otherwise, Download Away! » [attack_vector_alpha_0.1.1b.iso](http://turing.slu.edu/~hastint/attack_vector_alpha_0.1.1b.iso)
-* If you can host a mirror, please do. Also put up torrents. Yes.
-* [atwerkVector.org](http://turing.slu.edu/~hastint/AttackVector.htm)?
+* Otherwise, Download Away! » [attack_vector_alpha_0.1.1b.iso](http://bit.do/avlinuxdl) md5 = 
+* Mirrors: [GDrive](https://docs.google.com/a/attackvector.org/file/d/0B4pmR5w1r5JkWXA4VlJwN19yVEk)
+* If you can host a mirror, please do. Also put up torrents. Yes. I'm asking for help. Plz ppl.
+* [attackVector.org](https://webcache.googleusercontent.com/search?q=cache:http%3A//turing.slu.edu/~hastint/AttackVector.htm)?
 
 F.A.Q.
 ======
