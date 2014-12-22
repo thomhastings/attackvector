@@ -41,7 +41,9 @@ In spite of this, the goal of **AttackVector Linux** is to integrate them compli
 Download
 ========
 * Recall you can always just follow the [build instructions](https://github.com/ksoona/attackvector/blob/master/README.md#build-instructions).
-* Otherwise, Download Away! » [attack_vector_alpha_0.1.1b.iso](http://bit.do/avlinuxdl) md5 = 
+* Otherwise, Download Away! » [attack_vector_alpha_0.1.1b.iso](http://bit.do/avlinuxdl)
+* ![QR](http://chart.apis.google.com/chart?cht=qr&chs=500x500&choe=UTF-8&chld=H%7C0&chl=http://bit.do/avlinuxdl)
+* md5 = 99243d5f4132116e2e9606d6b0c98e6f
 * Mirrors: [GDrive](https://docs.google.com/a/attackvector.org/file/d/0B4pmR5w1r5JkWXA4VlJwN19yVEk)
 * If you can host a mirror, please do. Also put up torrents. Yes. I'm asking for help. Plz ppl.
 * [attackVector.org](https://webcache.googleusercontent.com/search?q=cache:http%3A//turing.slu.edu/~hastint/AttackVector.htm)?
@@ -76,7 +78,7 @@ _Kaneda: This is one that's up for debate, but given @thomhastings' insistence t
 _Thom_: Here's the link from Tails' design: [Windows Camouflage](https://tails.boum.org/doc/first_steps/startup_options/windows_camouflage/index.en.html), also: [phillips321 did it on BT5](http://www.phillips321.co.uk/2012/08/28/making-backtrack5-look-like-xp/). I think it's totally useful to avoid suspicion from shoulder-surfers and nosy nancies.
   
 **Q: Aren't kiddies going to use this tool to... Chaos?!**  
-_A: Probably. I'm not a lawyer._ Here is an official-ish blurb: Customarily, I (@kensoona) am not responsible for any malicious use of this tool, and I hope that releasing it and its source code engenders better information security for the community at large.
+_A: Probably. I'm not a lawyer._ Here is an official-ish blurb: Customarily, I ([@kensoona](http://twitter.com/kensoona)) am not responsible for any malicious use of this tool, and I hope that releasing it and its source code engenders better information security for the community at large.
 
 
 Build Instructions
