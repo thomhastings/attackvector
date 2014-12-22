@@ -69,13 +69,13 @@ Here's a quick UI brainstorm...
 [openbox](http://openbox.org)
 [fluxbox](http://fluxbox.org)
 [ion](http://tuomov.iki.fi/software)
-I **love** the Buuf icon theme:
+I _love_ the Buuf icon theme:
 [buuf](http://buuficontheme.free.fr)
 Also obviously we could use MATE, XFCE, or LXDE, etc.
   
 **Q: One of your design goals is a Windows XP theme? (camouflage)**  
 _Kaneda: This is one that's up for debate, but given @thomhastings' insistence that we include it I will get around to it at some point in the near future._
-_Thom_: Here's the link from Tails' design: [Windows Camouflage](https://tails.boum.org/doc/first_steps/startup_options/windows_camouflage/index.en.html), also: [phillips321 did it on BT5](http://www.phillips321.co.uk/2012/08/28/making-backtrack5-look-like-xp/). I think it's totally useful to avoid suspicion from shoulder-surfers and nosy nancies.
+_Thom_: Here's the link from Tails' design: [Windows XP Camouflage](https://tails.boum.org/doc/first_steps/startup_options/windows_camouflage/index.en.html), also: [phillips321 did it on BT5](http://www.phillips321.co.uk/2012/08/28/making-backtrack5-look-like-xp/). I think it's totally useful to avoid suspicion from shoulder-surfers and nosy nancies.
   
 **Q: Aren't kiddies going to use this tool to... Chaos?!**  
 _A: Probably. I'm not a lawyer._ Here is an official-ish blurb: Customarily, I ([@kensoona](http://twitter.com/kensoona)) am not responsible for any malicious use of this tool, and I hope that releasing it and its source code engenders better information security for the community at large.
@@ -105,7 +105,7 @@ lb build
 
 #### Issue Tracker:
 Please submit all requests for bugfixes and features for our next release cycle to [GitHub Issues](https://github.com/ksoona/attackvector/issues).  
-We release under an "early, sometimes" philosophy. That whole "early, often" thing didn't work out.  
+We release under an "early, occasional" philosophy. That whole "early, often" thing didn't work out.  
 
 ##### Target use case(s):
 * Research labs targeting malware servers such as command and control servers.
@@ -124,13 +124,13 @@ Q: How is this different from BackBox/[ADHD](http://sf.net/p/adhd)/ArchAssault/m
 * 1.) No one had stiched the pieces together in this particular way. I'd argue that Tails features and [design goals like these](https://tails.boum.org/doc/about/features/index.en.html#index3h2) are noble ones for a Kali tandem project.
 * 2.) Kali's [live-build](http://docs.kali.org/live-build/live-build-a-custom-kali-iso) is designed for uses like this. Think of it as a post-install script that runs as you generate the ISO instead, so it's sorta like a pre-install as opposed to something like [remastersys](http://www.remastersys.com)&[system-imager](http://system-imaging.blogspot.com).
 
-via ex-developer **@kanedasan**:  
+via ex-developer [@kaneda](https://github.com/kaneda):  
 * 1) Tor is not configured "globally". It does not break UDP scans. It is set up such that things like wget and Iceweasel use it out of the box but can easily be switched off (in the case of Iceweasel, just hit the TOR button!)
 * 2) The additional tools you will find are not ones that many people know about, hence why they were not included in Kali to begin with. Further, I have received permission to distribute any and all of this software (if it did not come with a clear, legal license)
 * 3) You can go and look at the build scripts: this is how the ISOs are built, feel free to build it yourself and compare the resultant contents
 * 4) As stated in the FAQ, my design goals are to reach pen-testers and security professionals who do not have the time, money, and/or patience to build such a thing, and use them to get feedback regarding further innovations to this product. The immediate intent is not to aid "hacktivists working within oppressive governmental regiemes," but if it does in fact help them, then that's OK too  
-
-* ∆) This is still in **ΛLPHΛ STΛGE**, for bugfixes and feature requests please hassle [AAG](https://github.com/AAG-SATIEDN/attackvector), not me.
+* 5) Necessary plug for Kaneda's competitor build, called "Knife" https://github.com/kaneda/knife
+* ∆) This is still in **ΛLPHΛ STΛGE**, for bugfixes and feature requests please hassle [AAG](https://github.com/AAG-SATIEDN/attackvector), not @kensoona or @kaneda.
 
 Quotes
 ======
@@ -281,8 +281,8 @@ Add-ons List
 Project Status
 ==============
 * Build => Success
-* Download => DOWN
-* Domain/Hosting ?
+* Download => UP
+* Domain/Hosting
 ![UML Diagram](https://sourceforge.net/p/attackvector/screenshot/attackvector-uml-diagram2.png)
 It seems our best structural approach is customizing the [Kali Live Build scripts](http://docs.kali.org/live-build/live-build-a-custom-kali-iso).  
 Eventually this Kali derivative should meet the [TAILS design specifications](https://tails.boum.org/contribute/design/#index13h2).
@@ -304,9 +304,8 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 * Full Disk Encryption (FDE) w/ [LUKS](https://code.google.com/p/cryptsetup/): Thank you [Kali](http://www.kali.org/tag/luks/)!
 + Live version on flash storage jump drive for Live Linux on-the-go
 + Full version on dedicated install with [wordlists galore](https://github.com/thomhastings/bt5-scripts#get-wordlistssh)
-* Host on [AttackVector.org](http://attackvector.org) (?)
+* Host on [AttackVector.org](http://parrotsec.org) (?)
 * Provide documentation!
-* Debian repositories (?)
 * Continue to integrate high [quality](http://www.fuzzysecurity.com/coding.html) [tools](https://github.com/thomhastings/bt5-scripts#get-scriptssh)
 * cron Clone the Kali&Tails git repos so that AttackVector can stand-alone
 + Change live build to run off this/these new mirror(s)
@@ -324,6 +323,6 @@ Eventually this Kali derivative should meet the [TAILS design specifications](ht
 
 яøʇɔǝΛʞɔɐʇʇ∀AttackVectØR
 ========================
-via ÜNiCØD∄SP♠DE  
+via [ÜNiCØD∄SP♠DE](http://unicodespade.wordpress.com)  
 
 *not affiliated with "Anonymous" "4chan" "LulzSec" etc.
