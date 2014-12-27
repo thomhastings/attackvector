@@ -70,8 +70,3 @@ wget http://download.exploit-exercises.com/exploit-exercises-nebula-4.ova.torren
 wget http://download.exploit-exercises.com/exploit-exercises-nebula-4.ova
 wget http://download.exploit-exercises.com/exploit-exercises-protostar.ova.torrent -O exploit-exercises-protostar.ova.original.torrent
 wget http://download.exploit-exercises.com/exploit-exercises-protostar.ova
-bash /torrents/bin/create_torrents.sh
-bash /torrents/bin/edit_torrents.sh
-bash /torrents/bin/generate_checksums.sh && bash /torrents/bin/generate_infohashs.sh
-bash /torrents/bin/seed_torrents.sh
-bash /torrents/bin/backup_torrents.sh
