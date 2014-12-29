@@ -5,9 +5,12 @@ ircport=""
 sshport=""
 ##### !!!sensitive data!!!
 ircpass=""
- 
- 
- 
+#                __         .__        
+#  _____ _____ _/  |________|__|__  ___
+# /     \\__  \\   __\_  __ \  \  \/  /
+#|  Y Y  \/ __ \|  |  |  | \/  |>    < 
+#|__|_|  (____  /__|  |__|  |__/__/\_ \
+#      \/     \/                     \/
 ##### Install IRC BNC (ZNC)
 #apt-cache search znc
 #apt-cache show znc
