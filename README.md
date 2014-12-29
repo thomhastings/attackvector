@@ -5,9 +5,7 @@
 ©#!zǝяø88∴» ✪[TØѪμ](http://github.com/thomhastings)™ ✪[5тiиgεя](http://ksoona.github.io)® —[didym0us](http://ejje.weblio.jp/content/65803+Didymos)☻ #!∆∴»~ skip to: [Downloads](https://github.com/ksoona/attackvector/blob/master/README.md#download)
 
 「**AttackVector Linux**」 is a new distribution for anonymized* penetration testing & security auditing.  
-If you will, the "[dargon](http://www.n1tr0g3n.com/wp-content/uploads/2011/12/Green_dragon_by_archstroke.png)" {[龍](http://dragonkahn.deviantart.com/art/Sleek-and-Sporty-528791)} now has "[tails](http://tails.boum.org)" —get [it](http://5tinger.deviantart.com/art/Sleek-and-Sporty-2-60881670)? Follow the extended [meta](https://www.spaceglasses.com)phor? I know, it's lame.  
-**AVL** is organized around a [custom](http://sf.net/p/customwheezy7)ized [Kali](http://kali.org) build, using design patterns from [Tails](https://tails.boum.org), as well as aethetics from [Parrot](http://parrotsec.org).  
-All of the above are based on [Debian](http://debian.org). Дtta¢k Vεcтøя also comes with additional tools not found in these prior art sub-distributions.
+If you will, the "[dargon](http://www.n1tr0g3n.com/wp-content/uploads/2011/12/Green_dragon_by_archstroke.png)" {[龍](http://dragonkahn.deviantart.com/art/Sleek-and-Sporty-528791)} now has "[tails](http://tails.boum.org)" —get [it](http://5tinger.deviantart.com/art/Sleek-and-Sporty-2-60881670)? Follow the extended [meta](https://www.spaceglasses.com)phor? **AVL** is organized around a [custom](http://sf.net/p/customwheezy7)ized [Kali](http://kali.org) build, using design patterns from [Tails](https://tails.boum.org), as well as aethetic ideas from [Parrot](http://parrotsec.org).  All of the above are based on [Debian](http://debian.org). Дtta¢k Vεcтøя also comes with additional tools not found in these prior art sub-distributions.
 
 -------------------------------------------------------------------
 
